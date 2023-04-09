@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Academy: проект Седона</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body class="page-body">
+
+  <!-- шапка -->
+
+  <header class="main-header container">
+    <a class="main-header__logo-link" href="index.html">
+      <img class="main-header__logo" src="../source/img/logo-sedona.svg" width="185" height="96" alt="Логотип сайта.">
+    </a>
+
+    <!-- навигация -->
+
+    <nav class="main-nav">
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__list left-list">
+          <li class="left-list__item left-list__item--active">
+            <a class="left-list__link" href="index.html">Главная</a>
+          </li>
+          <li class="left-list__item">
+            <a class="left-list__link" aria-current="page">Фото и видео</a>
+          </li>
+        </ul>
+        <ul class="main-nav__list right-list">
+          <li class="right-list__item">
+            <a class="right-list__link" href="form.html">Форма отзыва</a>
+          </li>
+          <li class="right-list__item">
+            <a class="right-list__link" href="https://htmlacademy.ru/">HTML Academy</a>
+          </li>
+        </ul>
+      </div>
+      <button class="main-nav__toggle" type="button">
+        <span class="visually-hidden">Открыть меню.</span>
+      </button>
+    </nav>
+  </header>
+
+  <!-- основное -->
+
+  <main class="main-container">
+    <h1 class="visually-hidden">Природа Седоны.</h1>
+    <section class="hero">
+      <img class="hero__image" src="" alt="Welcome to the gorgeous Sedona, because the Grand Canyon sucks!">
+    </section>
+    <div class="introduction__catalog introduction">
+      <h2 class="introduction __title">Фото и видео</h2>
+      <p class="introduction __description"> Не можете решиться на путешествие из-за курса? Фотографии помогут вам
+        забыть о
+        политике и экономике.</p>
+    </div>
+    <section class="gallery">
+      <ul class="gallery__list">
+        <li class="gallery__item">
+          <img class="gallery__picture gallery__picture--road" src="" alt="Фотография дороги в прерии.">
+          <h3 class="gallery__title">Неродные просторы</h3>
+          <p class="gallery__author">Автор фото: Борис</p>
+          <div class="gallery__rate">
+            <img class="gallery__icon" src="">
+            <p class="gallery__number">1350</p>
+          </div>
+        </li>
+        <li class="gallery__item">
+          <img class="gallery__picture gallery__picture--cactus" src="" alt="Фотография цветущего кактуса.">
+          <h3 class="gallery__title">Местная растительность</h3>
+          <p class="gallery__author">Автор фото: Сергей</p>
+          <div class="gallery__rate">
+            <img class="gallery__icon" src="">
+            <p class="gallery__number">143</p>
+          </div>
+        </li>
+        <li class="gallery__item">
+          <img class="gallery__picture gallery__picture--north-road" src="" alt="Фотография горного серпантина.">
+          <h3 class="gallery__title">Дорога на север</h3>
+          <p class="gallery__author">Автор фото: Петр</p>
+          <div class="gallery__rate">
+            <img class="gallery__icon" src="">
+            <p class="gallery__number">96</p>
+          </div>
+        </li>
+        <li class="gallery__item">
+          <img class="gallery__picture gallery__picture--devil-bridge" src="" alt="Фотография «Моста Дьявола»">
+          <h3 class="gallery__title">Мост дьявола</h3>
+          <p class="gallery__author">Автор фото: Антон</p>
+          <div class="gallery__rate">
+            <img class="gallery__icon" src="">
+            <p class="gallery__number">254</p>
+          </div>
+        </li>
+      </ul>
+    </section>
+    <section class="demonstrate">
+      <div class="demonstrate__wrapper">
+        <h2 class="demonstrate__title">Все еще сомневаетесь?</h2>
+        <p class="demonstrate__description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в
+          очередной раз!</p>
+      </div>
+      <img class="demonstrate__video" src="">
+    </section>
+  </main>
+
+  <!-- подвал -->
+
+  <footer class="main-footer">
+    <h2 class="main-footer__title">#visitsedona</h2>
+    <div class="main-footer__social social">
+      <h3 class="visually-hidden">Мы в социальных сетях:</h3>
+      <ul class="social__list">
+        <li class="social__item">
+          <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
+            <span class="visually-hidden">Vkontakte.</span>
+            <svg class="social__icon"></svg>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
+            <span class="visually-hidden">Telegram.</span>
+            <svg class="social__icon"></svg>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
+            <span class="visually-hidden">Youtube.</span>
+            <svg class="social__icon"></svg>
+          </a>
+        </li>
+      </ul>
+      <div class="main-footer__academy">
+        <a class="main-footer__academy-link">
+          <span class="main-footer__academy-create">Разработано</span>
+          <svg class="main-footer__academy-logo"></svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
