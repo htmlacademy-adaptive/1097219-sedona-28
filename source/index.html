@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HTML Academy: проект Седона</title>
-  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page-body">
@@ -15,7 +15,7 @@
 
   <header class="main-header container">
     <a class="main-header__logo-link" aria-current="page">
-      <img class="main-header__logo" src="../img/logo-sedona.svg" width="185" height="96" alt="Логотип сайта.">
+      <img class="main-header__logo" src="./img/header/logo-sedona.svg" width="185" height="96" alt="Логотип сайта.">
     </a>
 
     <!-- навигация -->
@@ -48,53 +48,50 @@
   <main class="main-container">
     <h1 class="visually-hidden">Добро пожаловать в Седону.</h1>
     <section class="hero">
-      <img class="hero__image" src="" alt="Welcome to the gorgeous Sedona, because the Grand Canyon sucks!">
+      <img class="hero__image" src="./img/hero-text.svg" width="460" height="350"
+        alt="Welcome to the gorgeous Sedona, because the Grand Canyon sucks!">
     </section>
-
     <section class="advantages">
       <div class="advantages__wrapper">
         <h2 class="advantages__title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
         <p class="advantages__description">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
       </div>
-
       <ul class="advantages__list">
-        <li class="advantages__item advantages__item--accent">
-          <div>
+        <li class="advantages__group">
+          <div class="advantages__item advantages__item--accent">
             <h3 class="advantages__title">Настоящий городок</h3>
             <p class="advantages__description">— №1 —</p>
             <p class="advantages__description">Седона не аттракцион для туристов, там течет своя жизнь</p>
           </div>
           <img class="advantages__image" src="" alt="" width="" height="">
+          <ul>
+            <li class="advantages__item">
+              <img class="advantages__image advantages__image--house" src="./img/content/photo-city-1.jpg" width="800"
+                height="256" alt="Изображение гостиницы.">
+              <h3 class="advantages__title">Жилье</h3>
+              <p class="advantages__description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+            </li>
+            <li class="advantages__item">
+              <img class="advantages__image advantages__image--food" src="" alt="">
+              <h3 class="advantages__title">Еда</h3>
+              <p class="advantages__description">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+            </li>
+            <li class="advantages__item">
+              <img class="advantages__image advantages__image--souvenirs" src="" alt="">
+              <h3 class="advantages__title">Сувениры</h3>
+              <p class="advantages__description">Не только китайского, но и местного производства!</p>
+            </li>
+          </ul>
         </li>
-        <li class="advantages__item">
-          <img class="advantages__image advantages__image--house" src="" alt="">
-          <h3 class="advantages__title">Жилье</h3>
-          <p class="advantages__description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
-        </li>
-        <li class="advantages__item">
-          <img class="advantages__image advantages__image--food" src="" alt="">
-          <h3 class="advantages__title">Еда</h3>
-          <p class="advantages__description">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
-        </li>
-        <li class="advantages__item">
-          <img class="advantages__image advantages__image--souvenirs" src="" alt="">
-          <h3 class="advantages__title">Сувениры</h3>
-          <p class="advantages__description">Не только китайского, но и местного производства!</p>
-        </li>
-      </ul>
-
-      <ul>
-        <li class="advantages__item advantages__item--accent">
-          <div>
+        <li class="advantages__group">
+          <div class="advantages__item advantages__item--accent">
             <h3 class="advantages__title">Там есть мост дьявола</h3>
             <p class="advantages__description">— №2 —</p>
             <p class="advantages__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
           </div>
-          <img class="advantages__image" src="" alt="" width="" height="">
+          <img class="advantages__image" src="./img/content/photo-bridge-1.jpg" width="800" height="256"
+            alt="Мост дьявола.">
         </li>
-      </ul>
-
-      <ul>
         <li class="advantages__item advantages__item--box">
           <h3 class="advantages__title">Небольшая площадь</h3>
           <p class="advantages__description">— №3 —</p>
@@ -119,7 +116,9 @@
         гостиниц в Седоне</p>
       <a class="search-hotel__link" href="#!">Найти гостиницу</a>
     </section>
-    <img class="map" src="" width="" height="">
+    <div class="map">
+      <img class="map__image" src="./img/content/map-desktop.jpg" alt="Карта местности.">
+    </div>
   </main>
 
   <!-- подвал -->

@@ -1,1 +1,28 @@
-// Начните писать стили здесь
+// базовые стили
+@import "./base/fonts.scss";
+@import "./base/base.scss";
+@import "./base/visually-hidden.scss";
+@import "./base/variables";
+@import "./mixins.scss";
+
+// контент стили
+
+@import "./blocks/advantages.scss";
+@import "./blocks/button.scss";
+@import "./blocks/container.scss";
+@import "./blocks/demonstrate.scss";
+@import "./blocks/feedback.scss";
+@import "./blocks/gallery.scss";
+@import "./blocks/hero.scss";
+@import "./blocks/introduction.scss";
+@import "./blocks/main-container.scss";
+@import "./blocks/main-header.scss";
+@import "./blocks/main-nav.scss";
+@import "./blocks/map.scss";
+@import "./blocks/page-body";
+@import "./blocks/search-hotel.scss";
+@import "./blocks/social.scss";
+
+// стили подвала
+
+@import "./blocks/main-footer.scss";

@@ -1,0 +1,12 @@
+.main-header {
+  position: relative;
+}
+
+@media (min-width: $tablet-width) {
+  .main-header__logo {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
