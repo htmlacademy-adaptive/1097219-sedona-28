@@ -1,0 +1,38 @@
+.gallery {
+  padding: 37px 20px 0;
+}
+
+.gallery__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.gallery__item {
+
+}
+
+.gallery__picture {
+  display: block;
+}
+
+.gallery__title {
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.gallery__author {
+  color: #333333;
+  margin: 0;
+  line-height: 21px;
+}
+
+.gallery__rate {
+ display: flex;
+ flex-wrap: wrap;
+}
+
+.gallery__number {
+  margin: 0;
+  line-height: 21px;
+}

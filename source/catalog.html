@@ -48,11 +48,11 @@
   <main class="main-container">
     <h1 class="visually-hidden">Природа Седоны.</h1>
     <section class="hero">
-      <img class="hero__image" src="./img/hero-desktop.jpg" alt="Welcome to the gorgeous Sedona, because the Grand Canyon sucks!">
+      <img class="hero__image" src="" alt="Welcome to the gorgeous Sedona, because the Grand Canyon sucks!">
     </section>
     <div class="introduction introduction--catalog">
-      <h2 class="introduction __title">Фото и видео</h2>
-      <p class="introduction __description"> Не можете решиться на путешествие из-за курса? Фотографии помогут вам
+      <h2 class="introduction__title">Фото и видео</h2>
+      <p class="introduction__description"> Не можете решиться на путешествие из-за курса? Фотографии помогут вам
         забыть о
         политике и экономике.</p>
     </div>
@@ -75,7 +75,7 @@
           <h3 class="gallery__title">Местная растительность</h3>
           <p class="gallery__author">Автор фото: Сергей</p>
           <div class="gallery__rate">
-            <a href="#!">
+            <a class="gallery__image" href="#!">
               <span class="visually-hidden">Лайк.</span>
             </a>
             <p class="gallery__number">143</p>
@@ -86,7 +86,7 @@
           <h3 class="gallery__title">Дорога на север</h3>
           <p class="gallery__author">Автор фото: Петр</p>
           <div class="gallery__rate">
-            <a href="#!">
+            <a class="gallery__image" href="#!">
               <span class="visually-hidden">Лайк.</span>
             </a>
             <p class="gallery__number">96</p>
@@ -97,7 +97,7 @@
           <h3 class="gallery__title">Мост дьявола</h3>
           <p class="gallery__author">Автор фото: Антон</p>
           <div class="gallery__rate">
-            <a href="#!">
+            <a class="gallery__image" href="#!">
               <span class="visually-hidden">Лайк.</span>
             </a>
             <p class="gallery__number">254</p>
@@ -123,28 +123,35 @@
       <h3 class="visually-hidden">Мы в социальных сетях:</h3>
       <ul class="social__list">
         <li class="social__item">
-          <a class="social__link social__link" href="https://vk.com/htmlacademy">
+          <a class="social__link" href="https://vk.com/htmlacademy">
+            <svg class="social__icon" aria-hidden="true" focusable="false" width="24" height="14" viewBox="0 0 24 14" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M23.45 0.948C23.616 0.402 23.45 0 22.655 0H20.03C19.362 0 19.054 0.347 18.887 0.73C18.887 0.73 17.552 3.926 15.661 6.002C15.049 6.604 14.771 6.795 14.437 6.795C14.27 6.795 14.019 6.604 14.019 6.057V0.948C14.019 0.292 13.835 0 13.279 0H9.151C8.734 0 8.483 0.304 8.483 0.593C8.483 1.214 9.429 1.358 9.526 3.106V6.904C9.526 7.737 9.373 7.888 9.039 7.888C8.149 7.888 5.984 4.677 4.699 1.003C4.45 0.288 4.198 0 3.527 0H0.9C0.15 0 0 0.347 0 0.73C0 1.412 0.89 4.8 4.145 9.281C6.315 12.341 9.37 14 12.153 14C13.822 14 14.028 13.632 14.028 12.997V10.684C14.028 9.947 14.186 9.8 14.715 9.8C15.105 9.8 15.772 9.992 17.33 11.467C19.11 13.216 19.403 14 20.405 14H23.03C23.78 14 24.156 13.632 23.94 12.904C23.702 12.18 22.852 11.129 21.725 9.882C21.113 9.172 20.195 8.407 19.916 8.024C19.527 7.533 19.638 7.314 19.916 6.877C19.916 6.877 23.116 2.451 23.449 0.948H23.45Z" fill="white"/>
+              </svg>
             <span class="visually-hidden">Vkontakte.</span>
-            <svg class="social__icon"></svg>
           </a>
         </li>
         <li class="social__item">
-          <a class="social__link social__link" href="https://t.me/htmlacademy">
+          <a class="social__link" href="https://t.me/htmlacademy">
+            <svg class="social__icon" aria-hidden="true" focusable="false" width="22" height="18" viewBox="0 0 22 18" xmlns="http://www.w3.org/2000/svg">
+              <path d="M21.4393 1.62225L18.2705 16.566C18.0313 17.6205 17.408 17.883 16.5223 17.3865L11.6938 13.8285L9.36425 16.0695C9.10626 16.3275 8.891 16.5428 8.39375 16.5428L8.741 11.6258L17.6893 3.54C18.0785 3.1935 17.6045 3.00075 17.0848 3.348L6.02225 10.314L1.25976 8.823C0.224006 8.49975 0.205256 7.78725 1.47576 7.29L20.1035 0.113253C20.966 -0.209997 21.7205 0.305253 21.4393 1.623V1.62225Z" fill="white"/>
+              </svg>
             <span class="visually-hidden">Telegram.</span>
-            <svg class="social__icon"></svg>
           </a>
         </li>
         <li class="social__item">
-          <a class="social__link social__link" href="https://www.youtube.com/user/htmlacademyru">
+          <a class="social__link" href="https://www.youtube.com/user/htmlacademyru">
+            <svg class="social__icon" aria-hidden="true" focusable="false" width="20" height="14" viewBox="0 0 20 14" xmlns="http://www.w3.org/2000/svg">
+              <path d="M17.1813 0H2.81331C1.30618 0 0 1.3 0 2.8V11.1C0 12.7 1.30618 14 2.81331 14H17.1813C18.7889 14 19.9946 12.7 19.9946 11.2V2.8C20.095 1.3 18.7889 0 17.1813 0ZM7.03326 10.4V3.6L13.8656 7L7.03326 10.4Z" fill="white"/>
+              </svg>
             <span class="visually-hidden">Youtube.</span>
-            <svg class="social__icon"></svg>
           </a>
         </li>
       </ul>
       <div class="main-footer__academy">
         <a class="main-footer__academy-link">
           <span class="main-footer__academy-create">Разработано</span>
-          <svg class="main-footer__academy-logo"></svg>
+          <svg class="main-footer__academy-logo" aria-hidden="true" focusable="false" width="28" height="35" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60">
+            <path fill="#00000" d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z"/></svg>
         </a>
       </div>
     </div>
