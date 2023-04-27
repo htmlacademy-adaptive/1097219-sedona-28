@@ -1,1 +1,28 @@
-// Начните писать стили здесь
+// базовые стили
+@import "base/fonts";
+@import "base/global";
+@import "base/helpers";
+
+// переменные и миксины
+@import "variables";
+@import "mixins";
+
+// контент стили
+
+@import "blocks/advantages";
+@import "blocks/button";
+@import "blocks/demonstrate";
+@import "blocks/feedback";
+@import "blocks/gallery";
+@import "blocks/hero";
+@import "blocks/introduction";
+@import "blocks/main-container";
+@import "blocks/main-header";
+@import "blocks/main-nav";
+@import "blocks/map";
+@import "blocks/search-hotel";
+
+// стили подвала
+
+@import "blocks/main-footer";
+@import "blocks/social";

@@ -1,0 +1,35 @@
+.main-nav {
+  position: absolute;
+  background-color: $blue;
+  width: 100%;
+  z-index: 2;
+}
+
+.main-nav__list {
+  list-style-type: none;
+}
+
+.main-nav__item {
+  min-height: 56px;
+}
+
+.main-nav__link {
+  display: block;
+  color: $white;
+  text-align: center;
+  font-weight: 700;
+  padding: 17px 50px 12px;
+}
+
+.main-nav__toggle {
+  position: absolute;
+  background-color: $white;
+  width: 23px;
+  height: 22px;
+  top: 17px;
+  right: 20px;
+  padding: 0;
+  cursor: pointer;
+  border: none;
+  z-index: 3;
+}
