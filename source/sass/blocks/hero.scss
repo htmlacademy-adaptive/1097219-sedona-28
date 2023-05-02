@@ -1,0 +1,18 @@
+.hero {
+  color: #ffffff;
+  background-color: #333333;
+  background-image: url("../img/hero-triangle.svg"), url("../img/back-desktop.jpg");
+  background-size: auto, cover;
+  background-repeat: no-repeat;
+  background-position: bottom center, top center;
+  padding: 90px 0 85px;
+  text-align: center;
+
+  @media (min-width: $tablet-desktop) {
+    padding: 77px 0 91px;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 78px 0 90px;
+  }
+}

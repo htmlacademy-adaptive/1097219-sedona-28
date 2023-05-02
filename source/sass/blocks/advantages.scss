@@ -19,23 +19,42 @@
 }
 
 .advantages__list {
+  margin: 0;
   padding: 0;
   list-style-type: none;
 }
 
-.advantages__item--accent {
+.advantages__item {
   color: $white;
   background-color: $blue;
   padding: 54px 18px 40px 18px;
+
+  &--box {
+    color: $black;
+    background-color: #e7e5e5;
+    padding: 24px 32px 28px;
+  }
+}
+
+@media (max-width: $mobile) {
+
+  .advantages__item--box:not(:last-child) {
+    border-bottom: 1px solid #d6d6d6;
+  }
 }
 
 .advantages__image {
   display: block;
+  object-fit: cover;
 }
 
 .advantages__group {
   color: $black;
   background-color: $white;
+
+  @media (min-width: $tablet-desktop) {
+    display: flex;
+  }
 }
 
 .advantages__group-list {
@@ -45,40 +64,34 @@
 
 .advantages__group-title {
   margin: 0;
+  padding-left: 47px;
   text-align: left;
   text-transform: uppercase;
 }
 
 .advantages__group-description {
   margin: 0;
+  padding-left: 47px;
   color: #333333;
   text-align: left;
   text-transform: uppercase;
 }
 
-.advantages__group-item--house {
-  background-image: url("");
+.advantages__group-item {
+  display: block;
   background-size: 40px 40px;
   background-repeat: no-repeat;
   background-position: 0 0;
+}
+
+.advantages__group-item--house {
+  background-image: url("../img/content/icon-house.svg");
 }
 
 .advantages__group-item--food {
-  background-image: url("");
-  background-size: 40px 40px;
-  background-repeat: no-repeat;
-  background-position: 0 0;
+  background-image: url("../img/content/icon-burger.svg");
 }
 
 .advantages__group-item--souvenirs {
-  background-image: url("");
-  background-size: 40px 40px;
-  background-repeat: no-repeat;
-  background-position: 0 0;
-}
-
-.advantages__item--box {
-  color: $black;
-  background-color: #e7e5e5;
-  padding: 24px 32px 28px;
+  background-image: url("../img/content/icon-gift.svg");
 }

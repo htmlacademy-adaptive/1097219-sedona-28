@@ -9,4 +9,13 @@
   top: 0;
   left: 50%;
   transform: translateX(-50%);
+
+  @media (min-width: $tablet-desktop) {
+    margin: 0 12px;
+    display: block;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 0 20px;
+  }
 }
