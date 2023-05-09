@@ -16,7 +16,7 @@
 
   <header class="main-header container">
     <a class="main-header__logo-link" aria-current="page">
-      <img class="main-header__logo" src="./img/header/logo-sedona.svg" width="185" height="96" alt="Логотип сайта.">
+      <img class="main-header__logo" src="img/header/logo-sedona.svg" width="185" height="96" alt="Логотип сайта.">
     </a>
 
     <!-- навигация -->
@@ -49,7 +49,7 @@
   <main class="main-container">
     <h1 class="visually-hidden">Добро пожаловать в Седону.</h1>
     <section class="hero">
-      <img class="hero__image" src="./img/hero-text.svg" width="460" height="350"
+      <img class="hero__image" src="img/hero-text.svg" width="460" height="350"
         alt="Welcome to the gorgeous Sedona, because the Grand Canyon sucks!">
     </section>
     <section class="advantages">
@@ -66,9 +66,12 @@
           </div>
 
           <picture>
-            <source media="(min-width: 1200px)" srcset="./img/catalog/photo-city-desktop@1x.jpg 1x, ./img/catalog/photo-city-desktop@2x.jpg 2x">
-            <source media="(min-width: 768px)" srcset="./img/catalog/photo-city-tablet@1x.jpg 1x, ./img/catalog/photo-city-tablet@2x.jpg 2x">
-            <img class="advantages__image" src="./img/catalog/photo-city-mobile@1x.jpg" srcset="./img/catalog/photo-city-mobile@2x.jpg 2x" width="320" height="260" alt="Изображение гостиницы.">
+            <source media="(min-width: 1200px)"
+              srcset="img/index/photo-city-desktop@1x.jpg 1x, img/index/photo-city-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)"
+              srcset="img/index/photo-city-tablet@1x.jpg 1x, img/index/photo-city-tablet@2x.jpg 2x">
+            <img class="advantages__image" src="img/index/photo-city-mobile@1x.jpg"
+              srcset="img/index/photo-city-mobile@2x.jpg 2x" width="320" height="260" alt="Изображение гостиницы.">
           </picture>
 
           <ul class="advantages__group-list">
@@ -89,8 +92,14 @@
         </li>
 
         <li class="advantages__group">
-          <img class="advantages__image" src="./img/content/photo-bridge-mobile@1x.jpg" width="800" height="256"
-            alt="Мост дьявола.">
+          <picture>
+            <source media="(min-width: 1200px)"
+              srcset="img/index/photo-bridge-desktop@1x.jpg 1x, img/index/photo-bridge-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)"
+              srcset="img/index/photo-bridge-tablet@1x.jpg 1x, img/index/photo-bridge-tablet@2x.jpg 2x">
+            <img class="advantages__image" src="img/index/photo-bridge-mobile@1x.jpg"
+              srcset="img/index/photo-bridge-mobile@2x.jpg 2x" width="320" height="260" alt="Мост дьявола.">
+          </picture>
           <div class="advantages__item advantages__item--accent">
             <h3 class="advantages__title">Там есть мост дьявола</h3>
             <p class="advantages__description">— №2 —</p>
@@ -119,10 +128,10 @@
       <h3 class="search-hotel__title">Заинтересовались?</h3>
       <p class="search-hotel__description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения
         гостиниц в Седоне</p>
-      <a class="search-hotel__link button" href="#!">Найти гостиницу</a>
+      <button class="search-hotel__button button" type="submit">Найти гостиницу</button>
     </section>
     <div class="map">
-      <img class="map__image" src="./img/map-desktop.jpg" alt="Карта местности.">
+      <img class="map__image" src="img/map-desktop.jpg" alt="Карта местности.">
     </div>
   </main>
 
@@ -180,7 +189,7 @@
     </div>
   </footer>
 
-  <script src="script.js"></script>
+  <script src="js/script.js"></script>
 </body>
 
 </html>
