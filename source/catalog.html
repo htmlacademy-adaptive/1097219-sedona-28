@@ -15,7 +15,7 @@
 
   <header class="main-header container">
     <a class="main-header__logo-link" href="index.html">
-      <img class="main-header__logo" src="./img/header/logo-sedona.svg" width="185" height="96" alt="Логотип сайта.">
+      <img class="main-header__logo" src="img/header/logo-sedona.svg" width="185" height="96" alt="Логотип сайта.">
     </a>
 
     <!-- навигация -->
@@ -48,8 +48,7 @@
   <main class="main-container">
     <h1 class="visually-hidden">Природа Седоны.</h1>
     <section class="hero">
-      <img class="hero__image" src="./img/hero-text.svg" width="460" height="350"
-        alt="Welcome to the gorgeous Sedona, because the Grand Canyon sucks!">
+      <img class="hero__image" src="img/sedona-text.svg" width="460" height="350" alt="Sedona.">
     </section>
     <div class="introduction introduction--catalog">
       <h2 class="introduction__title">Фото и видео</h2>
@@ -61,10 +60,19 @@
       <h2 class="visually-hidden">Галерея медиафайлов:</h2>
       <ul class="gallery__list">
         <li class="gallery__item">
-          <img class="gallery__picture" src="./img/catalog/photo-1-mobile.jpg" alt="Фотография дороги в прерии.">
+          <picture>
+            <source media="(min-width: 1200px)"
+              srcset="img/catalog/photo-1-desktop.jpg 1x, img/catalog/photo-1-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)"
+              srcset="img/catalog/photo-1-tablet.jpg 1x, img/catalog/photo-1-tablet@2x.jpg 2x">
+            <img class="gallery__picture" src="img/catalog/photo-1-mobile.jpg"
+              srcset="img/catalog/photo-1-mobile@2x.jpg 2x" width="280px" height="280px"
+              alt="Фотография дороги в прерии.">
+          </picture>
           <h3 class="gallery__title">Неродные просторы</h3>
           <p class="gallery__author">Автор фото: Борис</p>
           <div class="gallery__rate">
+            <img class="gallery__icon" src="img/catalog/like-icon.svg">
             <a href="#!">
               <span class="visually-hidden">Лайк.</span>
             </a>
@@ -72,10 +80,19 @@
           </div>
         </li>
         <li class="gallery__item">
-          <img class="gallery__picture" src="./img/catalog/photo-2-mobile.jpg" alt="Фотография цветущего кактуса.">
+          <picture>
+            <source media="(min-width: 1200px)"
+              srcset="img/catalog/photo-2-desktop.jpg 1x, img/catalog/photo-2-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)"
+              srcset="img/catalog/photo-2-tablet.jpg 1x, img/catalog/photo-2-tablet@2x.jpg 2x">
+            <img class="gallery__picture" src="img/catalog/photo-2-mobile.jpg"
+              srcset="img/catalog/photo-2-mobile@2x.jpg 2x" width="280px" height="280px"
+              alt="Фотография цветущего кактуса.">
+          </picture>
           <h3 class="gallery__title">Местная растительность</h3>
           <p class="gallery__author">Автор фото: Сергей</p>
           <div class="gallery__rate">
+            <img class="gallery__icon" src="img/catalog/like-icon.svg">
             <a class="gallery__image" href="#!">
               <span class="visually-hidden">Лайк.</span>
             </a>
@@ -83,10 +100,19 @@
           </div>
         </li>
         <li class="gallery__item">
-          <img class="gallery__picture" src="./img/catalog/photo-3-mobile.jpg" alt="Фотография горного серпантина.">
+          <picture>
+            <source media="(min-width: 1200px)"
+              srcset="img/catalog/photo-3-desktop.jpg 1x, img/catalog/photo-3-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)"
+              srcset="img/catalog/photo-3-tablet.jpg 1x, img/catalog/photo-3-tablet@2x.jpg 2x">
+            <img class="gallery__picture" src="img/catalog/photo-3-mobile.jpg"
+              srcset="img/catalog/photo-3-mobile@2x.jpg 2x" width="280px" height="280px"
+              alt="Фотография горного серпантина.">
+          </picture>
           <h3 class="gallery__title">Дорога на север</h3>
           <p class="gallery__author">Автор фото: Петр</p>
           <div class="gallery__rate">
+            <img class="gallery__icon" src="img/catalog/like-icon.svg">
             <a class="gallery__image" href="#!">
               <span class="visually-hidden">Лайк.</span>
             </a>
@@ -94,10 +120,19 @@
           </div>
         </li>
         <li class="gallery__item">
-          <img class="gallery__picture" src="./img/catalog/photo-4-mobile.jpg" alt="Фотография «Моста Дьявола»">
+          <picture>
+            <source media="(min-width: 1200px)"
+              srcset="img/catalog/photo-4-desktop.jpg 1x, img/catalog/photo-4-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)"
+              srcset="img/catalog/photo-4-tablet.jpg 1x, img/catalog/photo-4-tablet@2x.jpg 2x">
+            <img class="gallery__picture" src="img/catalog/photo-4-mobile.jpg"
+              srcset="img/catalog/photo-4-mobile@2x.jpg 2x" width="280px" height="280px"
+              alt="Фотография «Моста Дьявола».">
+          </picture>
           <h3 class="gallery__title">Мост дьявола</h3>
           <p class="gallery__author">Автор фото: Антон</p>
           <div class="gallery__rate">
+            <img class="gallery__icon" src="img/catalog/like-icon.svg">
             <a class="gallery__image" href="#!">
               <span class="visually-hidden">Лайк.</span>
             </a>
@@ -112,7 +147,7 @@
         <p class="demonstrate__description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в
           очередной раз!</p>
       </div>
-      <img class="demonstrate__video" src="./img/catalog/video-mobile.jpg">
+      <img class="demonstrate__video" src="img/catalog/video-mobile.jpg">
     </section>
   </main>
 
