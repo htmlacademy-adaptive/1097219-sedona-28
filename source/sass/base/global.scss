@@ -1,13 +1,14 @@
 html {
-  background-color: #e7e5e5;
+  background-color: $white-smoke;
 }
 
 body {
   font-family: "PT Sans", sans-serif;
   font-size: 14px;
+  line-height: 1.5;
   max-width: 1200px;
   margin: 0 auto;
-  background-color: #ffffff;
+  background-color: $white;
 }
 
 img {

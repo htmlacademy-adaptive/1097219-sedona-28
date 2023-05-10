@@ -3,10 +3,19 @@
   min-height: 56px;
 }
 
-.main-header__logo {
+.main-header__logo-link {
   position: absolute;
   z-index: 1;
   top: 0;
   left: 50%;
   transform: translateX(-50%);
+
+  @media (min-width: $tablet-desktop) {
+    margin: 0 12px;
+    display: block;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 0 20px;
+  }
 }

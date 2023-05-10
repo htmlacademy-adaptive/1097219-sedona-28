@@ -1,17 +1,38 @@
 .feedback {
-  padding: 36px 20px 22px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media (min-width: $tablet-desktop) {
+    width: 100%;
+  }
 }
 
 .feedback__form {
-
+  @media (min-width: $tablet-desktop) {
+    width: 100%;
+    background-color: $white;
+  }
 }
 
 .feedback__container {
+  padding: 36px 20px 22px;
+  border-top: solid 1px #e5e5e5;
 
+  @media (min-width: $tablet-desktop) {
+    display: block;
+    flex-direction: row;
+    padding-right: 43px;
+    border-top: none;
+    border-right: solid 1px #e5e5e5;
+  }
 }
 
 .feedback__information {
+  display: grid;
+  gap: 16px;
   margin: 0;
+  padding: 0;
   border: none;
 }
 
@@ -19,27 +40,75 @@
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
+  padding: 0;
   text-transform: uppercase;
 }
 
 .feedback__list {
+  margin: 0;
+  padding: 0;
   list-style-type: none;
 }
 
 .feedback__item {
-
+  padding: 16px 16px 16px 0;
 }
 
 .feedback__control {
+  display: block;
+  position: relative;
+  padding-left: 66px;
+  cursor: pointer;
 
+  &--radio .feedback__control-mark::after {
+    top: 15px;
+    left: 15px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: $brown-dark;
+  }
+
+  &--checkbox .feedback__control-mark::after {
+    content: url("../img/form/tick.svg");
+    padding: 15px 12px;
+  }
+
+  & input:checked ~ .feedback__control-mark::after {
+    display: block;
+  }
 }
 
 .feedback__control-input {
+  position: absolute;
   margin: 0;
+  opacity: 0;
+  left: 12px;
+  top: 3px;
 }
 
 .feedback__control-mark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 46px;
+  width: 46px;
+  background-color: $white-smoke;
+  margin-top: -10px;
 
+  &--radio {
+    border-radius: 50%;
+  }
+
+  &--checkbox {
+    border-radius: 4px;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
 }
 
 .feedback__control-label {
@@ -49,30 +118,41 @@
 }
 
 .feedback__wrapper {
-  display: inline-block;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
 }
 
 .feedback__caption {
-  color: #333333;
+  color: $brown-dark;
   text-transform: uppercase;
 }
 
 .feedback__field {
-
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  padding: 16px;
+  border: none;
+  background-color: $white-smoke;
 }
 
 .feedback__field--area {
+  margin: 0;
+  padding: 0;
   min-width: 279px;
   min-height: 150px;
 }
 
 .feedback__impressions {
   margin: 0;
+  padding: 0;
   border: none;
 }
 
 .feedback__attractions {
   margin: 0;
+  padding: 0;
   border: none;
 }
 
@@ -80,19 +160,19 @@
   margin: 0;
   padding: 0;
   border: none;
-  box-sizing: border-box;
-}
-
-.feedback__field--area {
-  margin: 0;
-  padding: 0;
 }
 
 .feedback__button {
-
+  font-size: 21px;
+  line-height: 26px;
+  padding: 16px 49px;
 }
 
 .feedback__required-field {
+  font-size: 12px;
+  line-height: 21px;
   margin: 0;
+  text-align: right;
+  text-transform: uppercase;
   color: rgba(#333333, 0.6);
 }

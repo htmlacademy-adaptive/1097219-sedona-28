@@ -19,66 +19,95 @@
 }
 
 .advantages__list {
+  margin: 0;
   padding: 0;
   list-style-type: none;
+
+  @media (min-width: $tablet-desktop) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
-.advantages__item--accent {
+.advantages__item {
   color: $white;
   background-color: $blue;
-  padding: 54px 18px 40px 18px;
+
+  @media (min-width: $tablet-desktop) {
+    max-width: 256px;
+  }
+
+  &--box {
+    color: $black;
+    background-color: #e7e5e5;
+
+    &:not(:last-child) {
+      @media (max-width: 767px) {
+        border-bottom: 1px solid #d6d6d6;
+      }
+    }
+  }
 }
 
 .advantages__image {
   display: block;
+  object-fit: cover;
+
+  @media (min-width: $tablet-desktop) {
+    min-width: 512px;
+  }
+
+  @media (min-width: $desktop) {
+    min-width: 800px;
+  }
 }
 
 .advantages__group {
   color: $black;
   background-color: $white;
+
+  @media (min-width: $tablet-desktop) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .advantages__group-list {
   padding: 0;
   list-style-type: none;
+
+  @media (min-width: $tablet-desktop) {
+    display: flex;
+  }
 }
 
-.advantages__group-title {
-  margin: 0;
+.advantages__group-item {
+  display: block;
   text-align: left;
-  text-transform: uppercase;
-}
-
-.advantages__group-description {
-  margin: 0;
-  color: #333333;
-  text-align: left;
+  padding-left: 47px;
+  background-size: 40px 40px;
+  background-repeat: no-repeat;
+  background-position: 0 0;
   text-transform: uppercase;
 }
 
 .advantages__group-item--house {
-  background-image: url("");
-  background-size: 40px 40px;
-  background-repeat: no-repeat;
-  background-position: 0 0;
+  background-image: url("../img/index/icon-house.svg");
 }
 
 .advantages__group-item--food {
-  background-image: url("");
-  background-size: 40px 40px;
-  background-repeat: no-repeat;
-  background-position: 0 0;
+  background-image: url("../img/index/icon-burger.svg");
 }
 
 .advantages__group-item--souvenirs {
-  background-image: url("");
-  background-size: 40px 40px;
-  background-repeat: no-repeat;
-  background-position: 0 0;
+  background-image: url("../img/index/icon-gift.svg");
 }
 
-.advantages__item--box {
-  color: $black;
-  background-color: #e7e5e5;
-  padding: 24px 32px 28px;
+.advantages__group-title {
+  margin: 0;
+}
+
+.advantages__group-description {
+  margin: 0;
+  color: $brown-dark;
 }

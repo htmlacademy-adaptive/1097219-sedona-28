@@ -7,6 +7,10 @@
   padding: 0;
   margin-bottom: 30px;
   list-style-type: none;
+
+  @media (min-width: $tablet-desktop) {
+    margin: 0;
+  }
 }
 
 .social__item {

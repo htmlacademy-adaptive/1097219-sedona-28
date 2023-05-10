@@ -1,11 +1,12 @@
+// переменные
+
+@import "base/variables";
+
 // базовые стили
+
 @import "base/fonts";
 @import "base/global";
 @import "base/helpers";
-
-// переменные и миксины
-@import "variables";
-@import "mixins";
 
 // контент стили
 
