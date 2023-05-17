@@ -1,5 +1,13 @@
 .demonstrate {
-  padding: 17px 28px 0;
+  padding: 0 20px;
+
+  @media (min-width: $tablet-desktop) {
+    padding: 0 60px;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 0 199px;
+  }
 }
 
 .demonstrate__wrapper {

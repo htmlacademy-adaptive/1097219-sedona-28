@@ -20,7 +20,6 @@
   @media (min-width: $tablet-desktop) {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
     gap: 2px;
     font-size: 14px;
     line-height: 21px;
@@ -33,15 +32,21 @@
 
   @media (min-width: $tablet-desktop) {
     box-shadow: none;
+    box-sizing: border-box;
+    width: 20%;
   }
+}
+
+.main-nav__item:nth-child(4n+2) {
+  margin-right: auto;
 }
 
 .main-nav__link {
   display: block;
   color: $white;
   font-weight: 700;
+  padding: 18px 15px;
   text-align: center;
-  padding: 17px 50px 12px;
   text-decoration: none;
 
   @media (min-width: $tablet-desktop) {
