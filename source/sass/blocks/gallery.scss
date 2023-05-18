@@ -27,7 +27,7 @@
     position: relative;
     align-content: start;
 
-    &:nth-child(1) {
+    &:first-child {
       grid-column: 1 / -1;
     }
   }
@@ -35,6 +35,9 @@
 
 .gallery__picture {
   display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .gallery__info {
@@ -63,17 +66,21 @@
   line-height: 21px;
 
   @media (min-width: $desktop) {
-    color: $white;
+    color: inherit;
   }
 }
 
 .gallery__rate {
   display: flex;
   flex-wrap: wrap;
-}
 
-.gallery__icon {
-  padding-right: 16px;
+  &::before {
+    content: "";
+    display: inline-block;
+    background-image: url("../img/catalog/like-icon.svg");
+    height: 21px;
+    width: 23px;
+  }
 }
 
 .gallery__number {

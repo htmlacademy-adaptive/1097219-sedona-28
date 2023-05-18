@@ -59,37 +59,36 @@
     <section class="feedback">
       <h2 class="visually-hidden">Форма обратной связи.</h2>
       <form class="feedback__form" action="https://echo.htmlacademy.ru/" method="get">
-
-        <fieldset class="feedback__group feedback__group--name">
-          <legend class="feedback__title">Представьтесь:</legend>
-          <p class="feedback__wrapper">
-            <label class="feedback__caption" for="first-name">Имя*:</label>
-            <input class="feedback__field" type="text" id="first-name" name="first-name" placeholder="Пётр" required>
-          </p>
-          <p class="feedback__wrapper">
-            <label class="feedback__caption" for="last-name">Фамилия*:</label>
-            <input class="feedback__field" type="text" id="last-name" name="last-name" placeholder="Пустота" required>
-          </p>
-          <p class="feedback__wrapper">
-            <label class="feedback__caption" for="patronymic">Отчество:</label>
-            <input class="feedback__field" type="text" id="patronymic" name="patronymic" placeholder="Викторович">
-          </p>
-        </fieldset>
-
-        <fieldset class="feedback__group feedback__group--contacts">
-          <legend class="feedback__title">Контактная информация:</legend>
-          <p class="feedback__wrapper">
-            <label class="feedback__caption" for="contacts-phone">Контактный телефон*:</label>
-            <input class="feedback__field feedback__field--phone" type="text" id="contacts-phone" name="contacts-phone"
-              placeholder="Введите телефон" required>
-          </p>
-          <p class="feedback__wrapper">
-            <label class="feedback__caption" for="e-mail">Электронная почта*:</label>
-            <input class="feedback__field feedback__field--email" type="email" id="e-mail" name="e-mail"
-              placeholder="Введите e-mail" required>
-          </p>
-        </fieldset>
-
+        <div class="feedback__group-wrapper">
+          <fieldset class="feedback__group feedback__group--name">
+            <legend class="feedback__title">Представьтесь:</legend>
+            <p class="feedback__wrapper">
+              <label class="feedback__caption" for="first-name">Имя*:</label>
+              <input class="feedback__field" type="text" id="first-name" name="first-name" placeholder="Пётр" required>
+            </p>
+            <p class="feedback__wrapper">
+              <label class="feedback__caption" for="last-name">Фамилия*:</label>
+              <input class="feedback__field" type="text" id="last-name" name="last-name" placeholder="Пустота" required>
+            </p>
+            <p class="feedback__wrapper">
+              <label class="feedback__caption" for="patronymic">Отчество:</label>
+              <input class="feedback__field" type="text" id="patronymic" name="patronymic" placeholder="Викторович">
+            </p>
+          </fieldset>
+          <fieldset class="feedback__group feedback__group--contacts">
+            <legend class="feedback__title">Контактная информация:</legend>
+            <p class="feedback__wrapper">
+              <label class="feedback__caption" for="contacts-phone">Контактный телефон*:</label>
+              <input class="feedback__field feedback__field--phone" type="text" id="contacts-phone"
+                name="contacts-phone" placeholder="Введите телефон" required>
+            </p>
+            <p class="feedback__wrapper">
+              <label class="feedback__caption" for="e-mail">Электронная почта*:</label>
+              <input class="feedback__field feedback__field--email" type="email" id="e-mail" name="e-mail"
+                placeholder="Введите e-mail" required>
+            </p>
+          </fieldset>
+        </div>
         <fieldset class="feedback__group feedback__group--impressions">
           <legend class="feedback__title">Ваше общее впечатление:</legend>
           <ul class="feedback__list">
@@ -116,7 +115,6 @@
             </li>
           </ul>
         </fieldset>
-
         <fieldset class="feedback__group feedback__group--attractions">
           <legend class="feedback__title">Посещенные достопримечательности:</legend>
           <ul class="feedback__list feedback__list--checkbox">
@@ -150,19 +148,16 @@
             </li>
           </ul>
         </fieldset>
-
         <fieldset class="feedback__group feedback__group--emotions">
           <label class="feedback__title" for="emotions">Опишите свои эмоции:</label>
           <textarea class="feedback__field feedback__field--area" id="emotions" name="emotions"
             placeholder="Опишите подробно все свои восторги" required></textarea>
         </fieldset>
-
         <div class="feedback__container">
           <button class="feedback__button button" type="submit">Отправить отзыв</button>
           <p class="feedback__required-field">* — обязательные поля</p>
         </div>
       </form>
-
     </section>
   </main>
 
