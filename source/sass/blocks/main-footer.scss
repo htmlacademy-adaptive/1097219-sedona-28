@@ -5,6 +5,7 @@
 
   @media (min-width: $tablet-desktop) {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
   }
 }
