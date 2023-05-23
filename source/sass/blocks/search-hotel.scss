@@ -4,7 +4,14 @@
 }
 
 .search-hotel__title {
+  font-size: 21px;
+  line-height: 26px;
   margin: 0;
+
+  @media (min-width: $tablet-desktop) {
+    font-size: 30px;
+    line-height: 30px;
+  }
 }
 
 .search-hotel__description {
@@ -13,6 +20,7 @@
 }
 
 .search-hotel__link {
+  display: inline-block;
   font-size: 21px;
   line-height: 26px;
   padding: 16px 49px;

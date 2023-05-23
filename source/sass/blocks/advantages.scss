@@ -10,6 +10,10 @@
   font-size: 18px;
   line-height: 26px;
   margin: 0;
+
+  @media (min-width: $tablet-desktop) {
+    font-size: 21px;
+  }
 }
 
 .advantages__description {
@@ -43,7 +47,7 @@
   }
 
   @media (min-width: $tablet-desktop) {
-    padding: 52px 0 31px;
+    padding: 52px 32px 31px;
   }
 
   &--box {
@@ -82,7 +86,7 @@
     display: grid;
     grid-template-columns: 1fr 2fr;
 
-    &--accent {
+    &--reversed {
       grid-template-columns: 2fr 1fr;
     }
   }
@@ -126,6 +130,8 @@
 }
 
 .advantages__group-title {
+  font-size: 21px;
+  line-height: 26px;
   margin: 0;
 }
 

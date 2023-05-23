@@ -4,7 +4,7 @@
   align-items: center;
 
   @media (min-width: $tablet-desktop) {
-    align-items: normal;
+    align-items: stretch;
   }
 }
 
@@ -50,13 +50,11 @@
     border-top: none;
 
     &--name {
-      width: 45%;
-      margin-right: auto;
+      margin-right: 10%;
     }
 
     &--contacts {
-      width: 45%;
-      margin-left: auto;
+      margin-left: 10%;
     }
 
     &--impressions {
@@ -114,7 +112,7 @@
 }
 
 .feedback__item {
-  padding: 16px 16px 16px 0;
+  padding: 16px 0 16px;
 }
 
 .feedback__control {
@@ -148,6 +146,10 @@
   opacity: 0;
   left: 12px;
   top: 3px;
+
+  &:focus-visible + .feedback__control-mark {
+    outline: solid 3px $blue;
+  }
 }
 
 .feedback__control-mark {
@@ -159,6 +161,14 @@
   background-color: $white-smoke;
   margin-top: -10px;
 
+  &:hover {
+    background-color: #e5e5e5;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
   &--radio {
     border-radius: 50%;
   }
@@ -168,9 +178,9 @@
   }
 
   &::after {
+    display: none;
     content: "";
     position: absolute;
-    display: none;
   }
 }
 
@@ -182,8 +192,46 @@
 
 .feedback__wrapper {
   display: flex;
+  position: relative;
   flex-direction: column;
   margin: 0;
+
+  &--phone,
+  &--email {
+    &::before {
+      content: "";
+      position: absolute;
+      top: 23px;
+      right: 0;
+      width: 58px;
+      height: 58px;
+      background-color: #e6e6e6;
+    }
+  }
+
+  &--phone {
+    &::after {
+      content: "";
+      position: absolute;
+      background-image: url("../img/sprite.svg#phone");
+      width: 18px;
+      height: 18px;
+      top: 43px;
+      right: 18px;
+    }
+  }
+
+  &--email {
+    &::after {
+      content: "";
+      position: absolute;
+      background-image: url("../img/sprite.svg#mail");
+      width: 18px;
+      height: 18px;
+      top: 43px;
+      right: 18px;
+    }
+  }
 }
 
 .feedback__caption {
@@ -192,36 +240,48 @@
 }
 
 .feedback__field {
+  display: block;
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
   padding: 16px;
+  box-sizing: border-box;
   border: none;
+  outline-offset: -3px;
   background-color: $white-smoke;
-  min-width: 260px;
+
+  &:focus-visible {
+    outline: solid 3px $blue;
+  }
+
+  &:hover {
+    background-color: #e5e5e5;
+    outline: 4px solid #e5e5e5;
+  }
+
+  &:active {
+    background-color: $white;
+  }
 
   &--area {
     width: 100%;
     margin: 0;
-    padding: 0;
+    padding: 16px;
     min-width: 279px;
     min-height: 150px;
-  }
-
-  @media (min-width: $desktop) {
-    min-width: 430px;
   }
 }
 
 .feedback__container {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .feedback__button {
   font-size: 21px;
   line-height: 26px;
   width: 100%;
-  padding: 16px 49px;
+  padding: 16px 48px;
 
   @media (min-width: 768px) {
     width: 324px;

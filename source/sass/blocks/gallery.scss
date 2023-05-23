@@ -26,6 +26,7 @@
     display: grid;
     position: relative;
     align-content: start;
+    border-bottom: none;
 
     &:first-child {
       grid-column: 1 / -1;
@@ -75,8 +76,8 @@
   flex-wrap: wrap;
 
   &::before {
-    content: "";
     display: inline-block;
+    content: "";
     background-image: url("../img/catalog/like-icon.svg");
     height: 21px;
     width: 23px;

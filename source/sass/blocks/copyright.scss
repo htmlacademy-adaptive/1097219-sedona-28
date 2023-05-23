@@ -1,0 +1,30 @@
+.copyright {
+  position: relative;
+}
+
+.copyright__link {
+  display: block;
+
+  &::after {
+    position: absolute;
+    content: "";
+    mask-image: url("../img/sprite.svg#htmlacademy");
+    background-color: $black;
+    width: 28px;
+    height: 35px;
+  }
+
+  &:hover::after {
+    background-color: #81b3d2;
+  }
+
+  &:active::after {
+    background-color: #b3b3b3;
+  }
+}
+
+.copyright__title {
+  display: inline-block;
+  margin: 7px 0;
+  text-transform: uppercase;
+}

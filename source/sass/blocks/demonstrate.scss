@@ -28,13 +28,15 @@
 }
 
 .demonstrate__wrapper-image {
+  position: relative;
+
   &::after {
     content: "";
     position: absolute;
     background-image: url("../img/catalog/play-icon.svg");
     width: 48px;
     height: 54px;
-    top: 84%;
+    top: 50%;
     right: 50%;
     transform: translate(50%, -50%);
   }

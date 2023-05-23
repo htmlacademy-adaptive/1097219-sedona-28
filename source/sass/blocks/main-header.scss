@@ -17,4 +17,12 @@
   @media (min-width: $desktop) {
     padding: 0 20px;
   }
+
+  &--nojs {
+    top: 100%;
+  }
+
+  @media (min-width: $tablet-desktop) {
+    top: 0;
+  }
 }

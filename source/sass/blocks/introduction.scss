@@ -5,10 +5,14 @@
 }
 
 .introduction__title {
-  font-size: 18px;
+  font-size: 21px;
   line-height: 26px;
   margin: 0;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-desktop) {
+    font-size: 30px;
+  }
 }
 
 .introduction__description {
