@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Academy: проект Седона</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="favicon.ico"> <!-- 32×32 -->
+  <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicons/favicon-180.png"> <!-- 180×180 -->
+  <link rel="manifest" href="manifest.webmanifest">
+  <base href="https://htmlacademy-adaptive.github.io/1097219-sedona-28/6/">
+</head>
+
+<body class="page-body">
+
+  <!-- шапка -->
+
+  <header class="main-header container">
+    <a class="main-header__logo-link main-header__logo-link" href="index.html">
+      <img class="main-header__logo" src="img/header/logo-sedona.svg" width="185" height="96" alt="Логотип сайта.">
+    </a>
+
+    <!-- навигация -->
+
+    <nav class="main-nav main-nav--opened main-nav--nojs">
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="index.html">Главная</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link main-nav__link--active" aria-current="page">Фото и видео</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="form.html">Форма отзыва</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="https://htmlacademy.ru/">HTML Academy</a>
+          </li>
+        </ul>
+      </div>
+      <button class="main-nav__toggle" type="button">
+        <span class="visually-hidden">Открыть меню.</span>
+      </button>
+    </nav>
+  </header>
+
+  <!-- основное -->
+
+  <main class="main-container">
+    <h1 class="visually-hidden">Природа Седоны.</h1>
+    <section class="hero">
+      <div class="hero__container">
+        <picture>
+          <source media="(min-width: 768px)" srcset="img/back-desktop.jpg 1x, img/back-desktop@2x.jpg 2x">
+          <img class="hero__image" src="img/back-desktop.jpg" srcset="img/back-mobile@2x.jpg 2x"
+            alt="Welcome to the gorgeous Sedona, because the Grand Canyon sucks!" width="320" height="389">
+        </picture>
+        <img class="hero__caption hero__caption--inner" src="img/sedona-text.svg" alt="Надпись SEDONA.">
+      </div>
+    </section>
+    <div class="introduction introduction--catalog">
+      <h2 class="introduction__title">Фото и видео</h2>
+      <p class="introduction__description"> Не можете решиться на путешествие из-за курса? Фотографии помогут вам
+        забыть о
+        политике и экономике.</p>
+    </div>
+    <section class="gallery">
+      <h2 class="visually-hidden">Галерея медиафайлов:</h2>
+      <ul class="gallery__list">
+        <li class="gallery__item">
+          <picture>
+            <source media="(min-width: 1200px)"
+              srcset="img/catalog/photo-1-desktop.jpg 1x, img/catalog/photo-1-desktop@2x.jpg 2x" width="1200"
+              height="400">
+            <source media="(min-width: 768px)"
+              srcset="img/catalog/photo-1-tablet.jpg 1x, img/catalog/photo-1-tablet@2x.jpg 2x" width="648" height="400">
+            <img class="gallery__picture" src="img/catalog/photo-1-mobile.jpg"
+              srcset="img/catalog/photo-1-mobile@2x.jpg 2x" width="280" height="280" alt="Фотография дороги в прерии.">
+          </picture>
+          <div class="gallery__info">
+            <h3 class="gallery__title">Неродные просторы</h3>
+            <p class="gallery__author">Автор фото: Борис</p>
+            <div class="gallery__rate">
+              <a class="gallery__image" href="#!">
+                <span class="visually-hidden">Лайк.</span>
+              </a>
+              <p class="gallery__number">1350</p>
+            </div>
+          </div>
+        </li>
+        <li class="gallery__item">
+          <picture>
+            <source media="(min-width: 1200px)"
+              srcset="img/catalog/photo-2-desktop.jpg 1x, img/catalog/photo-2-desktop@2x.jpg 2x" width="400"
+              height="267">
+            <source media="(min-width: 768px)"
+              srcset="img/catalog/photo-2-tablet.jpg 1x, img/catalog/photo-2-tablet@2x.jpg 2x" width="324" height="267">
+            <img class="gallery__picture" src="img/catalog/photo-2-mobile.jpg"
+              srcset="img/catalog/photo-2-mobile@2x.jpg 2x" width="280" height="280"
+              alt="Фотография цветущего кактуса.">
+          </picture>
+          <div class="gallery__info">
+            <h3 class="gallery__title">Местная растительность</h3>
+            <p class="gallery__author">Автор фото: Сергей</p>
+            <div class="gallery__rate">
+              <a class="gallery__image" href="#!">
+                <span class="visually-hidden">Лайк.</span>
+              </a>
+              <p class="gallery__number">143</p>
+            </div>
+          </div>
+        </li>
+        <li class="gallery__item">
+          <picture>
+            <source media="(min-width: 1200px)"
+              srcset="img/catalog/photo-3-desktop.jpg 1x, img/catalog/photo-3-desktop@2x.jpg 2x" width="400"
+              height="267">
+            <source media="(min-width: 768px)"
+              srcset="img/catalog/photo-3-tablet.jpg 1x, img/catalog/photo-3-tablet@2x.jpg 2x" width="324" height="267">
+            <img class="gallery__picture" src="img/catalog/photo-3-mobile.jpg"
+              srcset="img/catalog/photo-3-mobile@2x.jpg 2x" width="280" height="280"
+              alt="Фотография горного серпантина.">
+          </picture>
+          <div class="gallery__info">
+            <h3 class="gallery__title">Дорога на север</h3>
+            <p class="gallery__author">Автор фото: Петр</p>
+            <div class="gallery__rate">
+              <a class="gallery__image" href="#!">
+                <span class="visually-hidden">Лайк.</span>
+              </a>
+              <p class="gallery__number">96</p>
+            </div>
+          </div>
+        </li>
+        <li class="gallery__item">
+          <picture>
+            <source media="(min-width: 1200px)"
+              srcset="img/catalog/photo-4-desktop.jpg 1x, img/catalog/photo-4-desktop@2x.jpg 2x" width="400"
+              height="267">
+            <source media="(min-width: 768px)"
+              srcset="img/catalog/photo-4-tablet.jpg 1x, img/catalog/photo-4-tablet@2x.jpg 2x" width="324" height="267">
+            <img class="gallery__picture" src="img/catalog/photo-4-mobile.jpg"
+              srcset="img/catalog/photo-4-mobile@2x.jpg 2x" width="280" height="280" alt="Фотография «Моста Дьявола».">
+          </picture>
+          <div class="gallery__info">
+            <h3 class="gallery__title">Мост дьявола</h3>
+            <p class="gallery__author">Автор фото: Антон</p>
+            <div class="gallery__rate">
+              <a class="gallery__image" href="#!">
+                <span class="visually-hidden">Лайк.</span>
+              </a>
+              <p class="gallery__number">254</p>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </section>
+    <section class="demonstrate">
+      <div class="demonstrate__wrapper">
+        <h2 class="demonstrate__title">Все еще сомневаетесь?</h2>
+        <p class="demonstrate__description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в
+          очередной раз!</p>
+      </div>
+      <div class="demonstrate__wrapper-image">
+        <!-- будет встроен видеоплейер -->
+        <picture>
+          <source media="(min-width: 1200px)"
+            srcset="img/catalog/video-desktop.jpg 1x, img/catalog/video-desktop@2x.jpg 2x" width="400" height="267">
+          <source media="(min-width: 768px)"
+            srcset="img/catalog/video-tablet.jpg 1x, img/catalog/video-tablet@2x.jpg 2x" width="324" height="267">
+          <img class="demonstrate__image" src="img/catalog/video-mobile.jpg" srcset="img/catalog/video-mobile@2x.jpg 2x"
+            width="280" height="177" alt="Видеопрезентация.">
+        </picture>
+      </div>
+    </section>
+  </main>
+
+  <!-- подвал -->
+
+  <footer class="main-footer">
+    <h2 class="main-footer__hashtag">#visitsedona</h2>
+    <div class="main-footer__social social">
+      <h3 class="visually-hidden">Мы в социальных сетях:</h3>
+      <ul class="social__list">
+        <li class="social__item">
+          <a class="social__link social__link--vk" href="https://vk.com/htmlacademy">
+            <span class="visually-hidden">Vkontakte.</span>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--tg" href="https://t.me/htmlacademy">
+            <span class="visually-hidden">Telegram.</span>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--yt" href="https://www.youtube.com/user/htmlacademyru">
+            <span class="visually-hidden">Youtube.</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="main-footer__copyright copyright">
+      <a class="copyright__link">
+        <span class="copyright__title">Разработано</span>
+      </a>
+    </div>
+  </footer>
+  <script src="js/script.js"></script>
+
+  <script>
+    window.pixelperfect = {
+      breakpoints: [320, 768, 1200]
+    };
+  </script>
+  <script src="https://efiand.github.io/pixelperfect-tool/pixelperfect.min.js"></script>
+
+</body>
+
+</html>
