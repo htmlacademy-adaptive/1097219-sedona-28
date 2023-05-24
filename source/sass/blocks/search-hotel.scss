@@ -1,12 +1,17 @@
 .search-hotel {
   text-align: center;
   padding: 38px 18px 49px;
+
+  @media (min-width: $tablet-desktop) {
+    padding: 38px 166px 49px;
+  }
 }
 
 .search-hotel__title {
   font-size: 21px;
   line-height: 26px;
   margin: 0;
+  margin-bottom: 20px;
 
   @media (min-width: $tablet-desktop) {
     font-size: 30px;
@@ -16,6 +21,7 @@
 
 .search-hotel__description {
   margin: 0;
+  margin-bottom: 32px;
   color: #333333;
 }
 

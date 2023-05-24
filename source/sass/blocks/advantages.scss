@@ -3,7 +3,15 @@
 }
 
 .advantages__container {
-  padding: 32px 18px 16px;
+  padding: 32px 25px 16px;
+
+  @media (min-width: $tablet-desktop) {
+    padding: 32px 80px 16px;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 32px 290px 16px;
+  }
 }
 
 .advantages__title {
@@ -21,6 +29,7 @@
 }
 
 .advantages__list {
+  position: relative;
   margin: 0;
   padding: 0;
   list-style-type: none;
@@ -35,16 +44,6 @@
   color: $white;
   background-color: $blue;
   padding: 37px 18px;
-
-  @media (max-width: 767px) {
-    &--decorated {
-      background-image: url("../img/hero-triangle-white.svg");
-      background-repeat: no-repeat;
-      background-size: contain;
-      padding-top: 22%;
-      padding-bottom: 40px;
-    }
-  }
 
   @media (min-width: $tablet-desktop) {
     padding: 52px 32px 31px;
@@ -105,7 +104,7 @@
 .advantages__group-item {
   background-size: 40px 40px;
   background-repeat: no-repeat;
-  background-position: 10px 0;
+  background-position: 12px 12px;
   padding: 23px 18px 25px 65px;
   text-align: left;
 
@@ -136,6 +135,7 @@
 }
 
 .advantages__group-description {
-  margin: 0;
   color: $brown-dark;
+  margin: 0;
+  padding-top: 16px;
 }

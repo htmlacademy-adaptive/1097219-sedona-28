@@ -12,19 +12,29 @@
 
 .demonstrate__wrapper {
   text-align: center;
+  padding: 17px 0 38px;
+  text-transform: uppercase;
 }
 
 .demonstrate__title {
   line-height: 26px;
   margin: 0;
-  text-transform: uppercase;
+  padding-bottom: 20px;
+
+  @media (min-width: $tablet-desktop) {
+    font-size: 30px;
+  }
 }
 
 .demonstrate__description {
-  color: #333333;
+  font-size: 18px;
   line-height: 26px;
+  color: #333333;
   margin: 0;
-  text-transform: uppercase;
+
+  @media (min-width: $tablet-desktop) {
+    font-size: 21px;
+  }
 }
 
 .demonstrate__wrapper-image {

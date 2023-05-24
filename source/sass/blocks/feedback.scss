@@ -21,6 +21,8 @@
 }
 
 .feedback__group-wrapper {
+  padding-top: 24px;
+
   @media (min-width: $tablet-desktop) {
     display: grid;
     position: relative;
@@ -41,9 +43,8 @@
 
 .feedback__group {
   margin: 0;
-  padding: 0;
+  padding: 0 0 39px;
   border: none;
-  border-top: solid 1px #e5e5e5;
 
   @media (min-width: $tablet-desktop) {
     padding-right: 0;
@@ -71,7 +72,7 @@
       display: flex;
       flex-flow: column wrap;
       width: 100%;
-      border-top: solid 1px #e5e5e5;
+      border: none
     }
   }
 }
@@ -92,6 +93,7 @@
   padding: 0;
   margin-left: auto;
   margin-right: auto;
+  text-align: center;
   text-transform: uppercase;
 }
 
@@ -112,7 +114,7 @@
 }
 
 .feedback__item {
-  padding: 16px 0 16px;
+  padding: 8px 0;
 }
 
 .feedback__control {
@@ -195,41 +197,39 @@
   position: relative;
   flex-direction: column;
   margin: 0;
+  padding-top: 16px;
 
   &--phone,
   &--email {
     &::before {
       content: "";
       position: absolute;
-      top: 23px;
+      top: 37px;
       right: 0;
       width: 58px;
       height: 58px;
       background-color: #e6e6e6;
     }
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 18px;
+      height: 18px;
+      top: 56px;
+      right: 18px;
+    }
   }
 
   &--phone {
     &::after {
-      content: "";
-      position: absolute;
       background-image: url("../img/sprite.svg#phone");
-      width: 18px;
-      height: 18px;
-      top: 43px;
-      right: 18px;
     }
   }
 
   &--email {
     &::after {
-      content: "";
-      position: absolute;
       background-image: url("../img/sprite.svg#mail");
-      width: 18px;
-      height: 18px;
-      top: 43px;
-      right: 18px;
     }
   }
 }
@@ -251,7 +251,7 @@
   background-color: $white-smoke;
 
   &:focus-visible {
-    outline: solid 3px $blue;
+    outline: 3px solid $blue;
   }
 
   &:hover {
@@ -283,7 +283,7 @@
   width: 100%;
   padding: 16px 48px;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-desktop) {
     width: 324px;
   }
 }
@@ -292,7 +292,7 @@
   font-size: 12px;
   line-height: 21px;
   margin: 0;
-  text-align: right;
+  margin-left: auto;
   text-transform: uppercase;
   color: rgba(#333333, 0.6);
 }

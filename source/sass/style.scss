@@ -22,10 +22,13 @@
 @import "blocks/main-nav";
 @import "blocks/map";
 @import "blocks/search-hotel";
-@import "blocks/modal-page";
-@import "blocks/copyright";
 
 // стили подвала
 
 @import "blocks/main-footer";
 @import "blocks/social";
+@import "blocks/copyright";
+
+// модальное окно
+
+@import "blocks/modal";
