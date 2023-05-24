@@ -19,6 +19,43 @@
   height: 48px;
   background-color: $blue;
   margin-right: 8px;
-  padding: 16px 0 0 0;
   box-sizing: border-box;
+}
+
+.social__link {
+  display: block;
+  padding: 12px;
+  box-sizing: border-box;
+
+  &:hover {
+    background-color: #669ec0;
+  }
+
+  &:active {
+    background-color: #5496bd;
+
+    &::after {
+      opacity: 0.3;
+    }
+  }
+
+  &::after {
+    display: block;
+    content: "";
+    width: 24px;
+    height: 24px;
+    background-color: $white;
+  }
+
+  &--vk::after {
+    mask-image: url("../img/sprite.svg#vector-vk");
+  }
+
+  &--tg::after {
+    mask-image: url("../img/sprite.svg#vector-tg");
+  }
+
+  &--yt::after {
+    mask-image: url("../img/sprite.svg#vector-yt");
+  }
 }

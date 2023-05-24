@@ -7,6 +7,11 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    padding: 33px 60px;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 33px 120px;
   }
 }
 
@@ -19,15 +24,4 @@
   @media (min-width: $tablet-desktop) {
     margin: 0;
   }
-}
-
-.main-footer__academy-link {
-  display: flex;
-  justify-content: center;
-}
-
-.main-footer__academy-create {
-  margin: 7px;
-  margin-left: 0;
-  text-transform: uppercase;
 }

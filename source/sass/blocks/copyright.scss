@@ -1,0 +1,33 @@
+.copyright {
+  position: relative;
+}
+
+.copyright__title {
+  margin: 7px 0;
+  text-transform: uppercase;
+}
+
+.copyright__link {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  color: $black;
+  text-decoration: none;
+  margin-left: auto;
+
+  &:hover {
+    color: $blue
+  }
+
+  &:active {
+    color: #b3b3b3;
+  }
+}
+
+.copyright__link:hover::after {
+  background-color: $blue;
+}
+
+.copyright__link:active::after {
+  background-color: #b3b3b3;
+}

@@ -12,29 +12,41 @@
 
 .demonstrate__wrapper {
   text-align: center;
+  padding: 17px 0 38px;
+  text-transform: uppercase;
 }
 
 .demonstrate__title {
   line-height: 26px;
   margin: 0;
-  text-transform: uppercase;
+  padding-bottom: 20px;
+
+  @media (min-width: $tablet-desktop) {
+    font-size: 30px;
+  }
 }
 
 .demonstrate__description {
-  color: #333333;
+  font-size: 18px;
   line-height: 26px;
+  color: #333333;
   margin: 0;
-  text-transform: uppercase;
+
+  @media (min-width: $tablet-desktop) {
+    font-size: 21px;
+  }
 }
 
 .demonstrate__wrapper-image {
+  position: relative;
+
   &::after {
     content: "";
     position: absolute;
     background-image: url("../img/catalog/play-icon.svg");
     width: 48px;
     height: 54px;
-    top: 84%;
+    top: 50%;
     right: 50%;
     transform: translate(50%, -50%);
   }
