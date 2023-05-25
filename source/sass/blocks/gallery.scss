@@ -102,7 +102,7 @@
   &::before {
     display: inline-block;
     content: "";
-    mask-image: url(../img/sprite.svg#like-icon);
+    mask-image: url("../img/sprite.svg#like-icon");
     background-color: $black;
     width: 23px;
     height: 21px;
@@ -117,7 +117,7 @@
 
 .gallery__number {
   line-height: 21px;
-  font-weight:700;
+  font-weight: 700;
   margin: 0;
   margin-left: 14px;
 }

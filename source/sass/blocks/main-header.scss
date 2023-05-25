@@ -5,10 +5,10 @@
 
 .main-header__logo-link {
   position: absolute;
-  z-index: 1;
   top: 0;
   left: 50%;
   transform: translateX(-50%);
+  z-index: 1;
 
   @media (min-width: $tablet-desktop) {
     display: block;
@@ -25,4 +25,8 @@
   @media (min-width: $tablet-desktop) {
     top: 0;
   }
+}
+
+.main-header__logo {
+  max-width: max-content;
 }
