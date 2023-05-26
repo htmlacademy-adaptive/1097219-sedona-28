@@ -16,7 +16,7 @@
 
   <!-- шапка -->
 
-  <header class="main-header container">
+  <header class="main-header">
     <a class="main-header__logo-link" aria-current="page">
       <img class="main-header__logo" src="img/header/logo-sedona.svg" width="185" height="96" alt="Логотип сайта.">
     </a>
@@ -56,18 +56,27 @@
     </section>
     <section class="advantages">
       <div class="advantages__container">
-        <h2 class="advantages__title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
-        <p class="advantages__description">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
+        <h2 class="advantages__container-title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
+        <p class="advantages__container-description">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
       </div>
       <ol class="advantages__list">
         <li class="advantages__group">
           <div class="advantages__group-wrapper">
-            <div class="advantages__item advantages__item--decorated">
+            <div class="advantages__item">
               <h3 class="advantages__title">Настоящий городок</h3>
               <p class="advantages__description">— №1 —</p>
               <p class="advantages__description">Седона не аттракцион для туристов, там течет своя жизнь</p>
             </div>
             <picture>
+              <source type="image/webp" media="(min-width: 1200px)"
+                srcset="img/index/photo-city-desktop@1x.webp 1x, img/index/photo-city-desktop@2x.webp 2x" width="720"
+                height="260">
+              <source type="image/webp" media="(min-width: 768px)"
+                srcset="img/index/photo-city-tablet@1x.webp 1x, img/index/photo-city-tablet@2x.webp 2x" width="512"
+                height="260">
+              <source type="image/webp" media="(min-width: 320px)"
+                srcset="img/index/photo-city-mobile@1x.webp 1x, img/index/photo-city-mobile@2x.webp 2x" width="320"
+                height="260">
               <source media="(min-width: 1200px)"
                 srcset="img/index/photo-city-desktop@1x.jpg 1x, img/index/photo-city-desktop@2x.jpg 2x" width="720"
                 height="260">
@@ -95,7 +104,21 @@
         </li>
         <li class="advantages__group">
           <div class="advantages__group-wrapper advantages__group-wrapper--reversed">
+            <div class="advantages__item advantages__item--accent">
+              <h3 class="advantages__title">Там есть мост дьявола</h3>
+              <p class="advantages__description">— №2 —</p>
+              <p class="advantages__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+            </div>
             <picture>
+              <source type="image/webp" media="(min-width: 1200px)"
+                srcset="img/index/photo-bridge-desktop@1x.webp 1x, img/index/photo-bridge-desktop@2x.webp 2x"
+                width="720" height="260">
+              <source type="image/webp" media="(min-width: 768px)"
+                srcset="img/index/photo-bridge-tablet@1x.webp 1x, img/index/photo-bridge-tablet@2x.webp 2x" width="512"
+                height="260">
+              <source type="image/webp" media="(min-width: 320px)"
+                srcset="img/index/photo-bridge-mobile@1x.webp 1x, img/index/photo-bridge-mobile@2x.webp 2x" width="320"
+                height="260">
               <source media="(min-width: 1200px)"
                 srcset="img/index/photo-bridge-desktop@1x.jpg 1x, img/index/photo-bridge-desktop@2x.jpg 2x" width="720"
                 height="260">
@@ -105,11 +128,6 @@
               <img class="advantages__image" src="img/index/photo-bridge-mobile@1x.jpg"
                 srcset="img/index/photo-bridge-mobile@2x.jpg 2x" width="320" height="260" alt="Мост дьявола.">
             </picture>
-            <div class="advantages__item advantages__item--accent">
-              <h3 class="advantages__title">Там есть мост дьявола</h3>
-              <p class="advantages__description">— №2 —</p>
-              <p class="advantages__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
-            </div>
           </div>
         </li>
         <li class="advantages__item advantages__item--box">

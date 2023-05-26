@@ -6,15 +6,19 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top center;
-  padding: 90px 19px 80px;
+  padding: 90px 19px 79px;
   text-align: center;
 
+    &--container {
+      padding: 53px 48px 61px;
+    }
+
   @media (min-width: $tablet-desktop) {
-    padding: 77px 0 91px;
+    padding: 77px 0 86px;
   }
 
   @media (min-width: $desktop) {
-    padding: 78px 0 90px;
+    padding: 79px 0 84px;
   }
 
   @media (min-resolution: 2dppx) {
@@ -24,12 +28,16 @@
   &::after {
     content: "";
     position: absolute;
-    background-image: url("../img/hero-triangle.svg");
+    background-image: url("../img/sprite.svg#intro-triangle");
     background-position: center;
     background-repeat: no-repeat;
     width: 100%;
-    height: 57px;
+    height: 30px;
     bottom: 0;
     right: 0;
+
+    @media (min-width: $tablet-desktop) {
+      height: 57px;
+    }
   }
 }

@@ -16,7 +16,7 @@
 
   <!-- шапка -->
 
-  <header class="main-header container">
+  <header class="main-header">
     <a class="main-header__logo-link" href="index.html">
       <img class="main-header__logo" src="img/header/logo-sedona.svg" width="185" height="96" alt="Логотип сайта.">
     </a>
@@ -49,11 +49,11 @@
   <!-- основное -->
 
   <main class="main-container">
-    <section class="hero">
+    <section class="hero hero--container">
       <h1 class="visually-hidden">Природа Седоны.</h1>
       <img class="hero__caption hero__caption--inner" src="img/sedona-text.svg" alt="Надпись SEDONA.">
     </section>
-    <div class="introduction introduction--catalog">
+    <div class="introduction">
       <h2 class="introduction__title">Фото и видео</h2>
       <p class="introduction__description"> Не можете решиться на путешествие из-за курса? Фотографии помогут вам
         забыть о
@@ -64,6 +64,13 @@
       <ul class="gallery__list">
         <li class="gallery__item">
           <picture>
+            <source type="image/webp" media="(min-width: 1200px)"
+              srcset="img/catalog/photo-1-desktop.webp 1x, img/catalog/photo-1-desktop@2x.webp 2x" width="400"
+              height="267">
+            <source type="image/webp" media="(min-width: 768px)"
+              srcset="img/catalog/photo-1-tablet.webp 1x, img/catalog/photo-1-tablet@2x.webp 2x" width="324" height="267">
+            <source type="image/webp" media="(min-width: 320px)"
+              srcset="img/catalog/photo-1-mobile.webp 1x, img/catalog/photo-1-mobile@2x.webp 2x" width="280" height="280">
             <source media="(min-width: 1200px)"
               srcset="img/catalog/photo-1-desktop.jpg 1x, img/catalog/photo-1-desktop@2x.jpg 2x" width="1200"
               height="400">
@@ -85,6 +92,13 @@
         </li>
         <li class="gallery__item">
           <picture>
+            <source type="image/webp" media="(min-width: 1200px)"
+              srcset="img/catalog/photo-2-desktop.webp 1x, img/catalog/photo-2-desktop@2x.webp 2x" width="400"
+              height="267">
+            <source type="image/webp" media="(min-width: 768px)"
+              srcset="img/catalog/photo-2-tablet.webp 1x, img/catalog/photo-2-tablet@2x.webp 2x" width="324" height="267">
+            <source type="image/webp" media="(min-width: 320px)"
+              srcset="img/catalog/photo-2-mobile.webp 1x, img/catalog/photo-2-mobile@2x.webp 2x" width="280" height="280">
             <source media="(min-width: 1200px)"
               srcset="img/catalog/photo-2-desktop.jpg 1x, img/catalog/photo-2-desktop@2x.jpg 2x" width="400"
               height="267">
@@ -107,6 +121,13 @@
         </li>
         <li class="gallery__item">
           <picture>
+            <source type="image/webp" media="(min-width: 1200px)"
+              srcset="img/catalog/photo-3-desktop.webp 1x, img/catalog/photo-3-desktop@2x.webp 2x" width="400"
+              height="267">
+            <source type="image/webp" media="(min-width: 768px)"
+              srcset="img/catalog/photo-3-tablet.webp 1x, img/catalog/photo-3-tablet@2x.webp 2x" width="324" height="267">
+            <source type="image/webp" media="(min-width: 320px)"
+              srcset="img/catalog/photo-3-mobile.webp 1x, img/catalog/photo-3-mobile@2x.webp 2x" width="280" height="280">
             <source media="(min-width: 1200px)"
               srcset="img/catalog/photo-3-desktop.jpg 1x, img/catalog/photo-3-desktop@2x.jpg 2x" width="400"
               height="267">
@@ -134,7 +155,7 @@
               height="267">
             <source type="image/webp" media="(min-width: 768px)"
               srcset="img/catalog/photo-4-tablet.webp 1x, img/catalog/photo-4-tablet@2x.webp 2x" width="324" height="267">
-            <source type="image/webp" media="(min-width: 1200px)"
+            <source type="image/webp" media="(min-width: 320px)"
               srcset="img/catalog/photo-4-mobile.webp 1x, img/catalog/photo-4-mobile@2x.webp 2x" width="280" height="280">
             <source media="(min-width: 1200px)"
               srcset="img/catalog/photo-4-desktop.jpg 1x, img/catalog/photo-4-desktop@2x.jpg 2x" width="400"
@@ -166,6 +187,13 @@
       <div class="demonstrate__wrapper-image">
         <!-- будет встроен видеоплейер -->
         <picture>
+          <source type="image/webp" media="(min-width: 1200px)"
+            srcset="img/catalog/video-desktop.webp 1x, img/catalog/video-desktop@2x.webp 2x" width="400"
+            height="267">
+          <source type="image/webp" media="(min-width: 768px)"
+            srcset="img/catalog/video-tablet.webp 1x, img/catalog/video-tablet@2x.webp 2x" width="324" height="267">
+          <source type="image/webp" media="(min-width: 320px)"
+            srcset="img/catalog/video-mobile.webp 1x, img/catalog/video-mobile@2x.webp 2x" width="280" height="177">
           <source media="(min-width: 1200px)"
             srcset="img/catalog/video-desktop.jpg 1x, img/catalog/video-desktop@2x.jpg 2x" width="400" height="267">
           <source media="(min-width: 768px)"

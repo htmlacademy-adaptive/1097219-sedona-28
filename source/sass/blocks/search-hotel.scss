@@ -30,4 +30,8 @@
   font-size: 21px;
   line-height: 26px;
   padding: 16px 49px;
+
+  @media (min-width: $tablet-desktop) {
+    width: 458px;
+  }
 }

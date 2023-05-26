@@ -1,7 +1,7 @@
 .introduction {
   text-align: center;
   margin: 0;
-  padding: 37px 10px 10px;
+  padding: 39px 20px 36px;
   border-bottom: solid 1px #e5e5e5;
 
   @media (min-width: $tablet-desktop) {
@@ -10,10 +10,9 @@
 }
 
 .introduction__title {
-  font-size: 21px;
+  font-size: 18px;
   line-height: 26px;
-  margin: 0;
-  margin-bottom: 20px;
+  margin: 0 auto 24px;
   text-transform: uppercase;
 
   @media (min-width: $tablet-desktop) {
@@ -22,9 +21,9 @@
 }
 
 .introduction__description {
-  font-size: 18px;
-  line-height: 26px;
-  color: #333333;
+  font-size: inherit;
+  line-height: 21px;
+  color: $brown-dark;
   margin: 0;
   margin-bottom: 25px;
   text-transform: uppercase;

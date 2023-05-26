@@ -64,25 +64,22 @@ const clean = () => deleteAsync('build');
 
 const postprocessHtml = () =>
   src('build/*.html')
-    .pipe(replace(/\s*<script.*?pixelperfect.*?\.js"><\/script>/, ''))
+    .pipe(replace(/\s*<script>.*pixelperfect.*\.js"><\/script>/s, ''))
     .pipe(dest('build'));
-
-const server = (done) => {
-  browser.init({
-    server: ['build', 'source'],
-    cors: true,
-    notify: false,
-    ui: false,
-  });
-  done();
-};
 
 const reload = (done) => {
   browser.reload();
   done();
 };
 
-const watcher = () => {
+const server = () => {
+  browser.init({
+    server: ['build', 'source'],
+    cors: true,
+    notify: false,
+    ui: false,
+  });
+
   watch('source/*.html').on('change', browser.reload);
   watch('source/sass/**/*.scss', styles);
   watch(['source/img/**/*.{jpg,png}', '!source/img/favicons/*'], series(createWebp, reload));
@@ -90,7 +87,7 @@ const watcher = () => {
 };
 
 const compile = series(clean, parallel(styles, createSprite, createWebp));
-const build = series(compile, parallel(optimizeImages, copy, postprocessHtml));
-const dev = series(compile, server, watcher);
+const build = series(compile, parallel(optimizeImages, copy), postprocessHtml);
+const dev = series(compile, server);
 
 export default isDev ? dev : build;

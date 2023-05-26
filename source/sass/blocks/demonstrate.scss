@@ -17,6 +17,7 @@
 }
 
 .demonstrate__title {
+  font-size: 18px;
   line-height: 26px;
   margin: 0;
   padding-bottom: 20px;
@@ -27,9 +28,9 @@
 }
 
 .demonstrate__description {
-  font-size: 18px;
-  line-height: 26px;
-  color: #333333;
+  font-size: 14px;
+  line-height: 21px;
+  color: $brown-dark;
   margin: 0;
 
   @media (min-width: $tablet-desktop) {
