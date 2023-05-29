@@ -8,25 +8,55 @@
   }
 }
 
-.feedback__form {
-  padding: 0 20px;
+.feedback__group-wrapper {
+  padding: 24px 20px 0;
+  border-top: solid 1px #e5e5e5;
+
+  &--columns {
+    padding-bottom: 33px;
+  }
+
+  &--inner {
+    padding-bottom: 10px;
+  }
 
   @media (min-width: $tablet-desktop) {
-    padding: 0 60px;
+    padding: 19px 60px 0;
+    border: none;
+
+    &--columns {
+      display: grid;
+      position: relative;
+      grid-template-columns: repeat(2, 1fr);
+      border: none;
+    }
+
+    &--inner {
+      padding: 0 96px 0;
+    }
   }
 
   @media (min-width: $desktop) {
-    padding: 0 120px;
+    padding: 27px 120px 0;
+
+    &--inner {
+      padding-top: 8px;
+    }
+
+    &--emotions {
+      padding-top: 97px;
+    }
   }
 }
 
-.feedback__group-wrapper {
-  padding-top: 24px;
+.feedback__group {
+  margin: 0;
+  padding: 0;
+  border: none;
 
-  @media (min-width: $tablet-desktop) {
-    display: grid;
+  &--name {
     position: relative;
-    grid-template-columns: repeat(2, 1fr);
+    padding-bottom: 63px;
 
     &::before {
       content: "";
@@ -35,20 +65,27 @@
       height: 100%;
       background-color: #dbdbdb;
       background-repeat: no-repeat;
-      bottom: -14px;
+      top: 150px;
       left: 50%;
+      transform: rotate(90deg);
+    }
+
+    @media (min-width: $tablet-desktop) {
+      &::before {
+        top: -47px;
+        left: 111%;
+        transform: none;
+      }
     }
   }
-}
 
-.feedback__group {
-  margin: 0;
-  padding: 0 0 39px;
-  border: none;
+  &--emotions {
+    text-align: center;
+  }
 
   @media (min-width: $tablet-desktop) {
     padding-right: 0;
-    border-top: none;
+
 
     &--name {
       margin-right: 10%;
@@ -59,20 +96,103 @@
     }
 
     &--impressions {
+      position: relative;
       width: 100%;
-      border-top: solid 1px #e5e5e5;
+
+      &::after,
+      &::before {
+        content: "";
+        position: absolute;
+        width: 1px;
+        height: 100%;
+        background-color: #dbdbdb;
+        background-repeat: no-repeat;
+        transform: rotate(90deg);
+        top: -95px;
+      }
+
+      &::after {
+        left: 96%;
+      }
+
+      &::before {
+        left: 5%;
+      }
+
+      @media (min-width: $desktop) {
+        &::after,
+        &::before {
+          top: -60px;
+        }
+      }
     }
 
     &--attractions {
+      position: relative;
       width: 100%;
-      border-top: solid 1px #e5e5e5;
+
+      .feedback__title {
+        padding: 35px 90px 0;
+
+        @media (min-width: $desktop) {
+          padding: 75px 275px 0;
+        }
+      }
+
+      &::after,
+      &::before {
+        content: "";
+        position: absolute;
+        width: 1px;
+        height: 100%;
+        background-color: #dbdbdb;
+        background-repeat: no-repeat;
+        transform: rotate(90deg);
+        top: -113px;
+      }
+
+      &::after {
+        left: 96%;
+      }
+
+      &::before {
+        left: 5%;
+      }
+
+      @media (min-width: $desktop) {
+        &::after,
+        &::before {
+          top: -73px;
+        }
+      }
     }
 
     &--emotions {
       display: flex;
       flex-flow: column wrap;
+      position: relative;
       width: 100%;
       border: none;
+
+      &::after,
+      &::before {
+        content: "";
+        position: absolute;
+        width: 1px;
+        height: 100%;
+        background-color: #dbdbdb;
+        background-repeat: no-repeat;
+        transform: rotate(90deg);
+        top: -94px;
+      }
+
+      &::after {
+        left: 96%;
+      }
+
+      &::before {
+        left: 5%;
+      }
     }
   }
 }
@@ -91,16 +211,29 @@
   line-height: 26px;
   font-weight: 700;
   padding: 0;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto 5px;
   text-align: center;
   text-transform: uppercase;
+
+  &--emotions {
+    display: inline-block;
+    margin: 0 auto 19px;
+  }
+
+  @media (min-width: $tablet-desktop) {
+    font-size: 21px;
+    margin-bottom: 12px;
+
+    &--emotions {
+      margin-bottom: 29px;
+    }
+  }
 }
 
 .feedback__list {
   display: grid;
   gap: 16px;
-  margin: 0;
+  margin: 15px 0;
   padding: 0;
   list-style-type: none;
 
@@ -108,13 +241,28 @@
     grid-template-columns: repeat(2, 1fr);
 
     &--checkbox {
-      padding: 0 50px;
+      padding: 0 32px 9px 48px;
     }
+  }
+
+  @media (min-width: $desktop) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 15px 0 0 2px;
+    padding: 0;
   }
 }
 
 .feedback__item {
-  padding: 8px 0;
+  padding: 10px 0;
+
+  @media (min-width: $desktop) {
+    padding: 28px 0 0 50px;
+
+    &--checkbox {
+      padding: 43px 6px 0 42px;
+    }
+  }
 }
 
 .feedback__control {
@@ -190,6 +338,8 @@
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
+  text-transform: none;
+  margin-left: -4px;
 }
 
 .feedback__wrapper {
@@ -217,7 +367,7 @@
       width: 18px;
       height: 18px;
       top: 56px;
-      right: 18px;
+      right: 20px;
     }
   }
 
@@ -237,10 +387,12 @@
 .feedback__caption {
   color: $brown-dark;
   text-transform: uppercase;
+  margin-left: 16px;
 }
 
 .feedback__field {
   display: block;
+  font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
@@ -269,12 +421,37 @@
     padding: 16px;
     min-width: 279px;
     min-height: 150px;
+
+    @media (min-width: $tablet-desktop) {
+      min-height: 159px;
+    }
+
+    @media (min-width: $desktop) {
+      max-width: 768px;
+      margin: auto auto;
+    }
+  }
+
+  &::placeholder {
+    color: inherit;
+    opacity: 0.3;
   }
 }
 
 .feedback__container {
   display: flex;
   flex-wrap: wrap;
+  padding: 55px 20px 0;
+
+  @media (min-width: $tablet-desktop) {
+    padding: 47px 60px 42px;
+  }
+
+
+  @media (min-width: $desktop) {
+    padding-left: 216px;
+    padding-right: 216px;
+  }
 }
 
 .feedback__button {
@@ -286,13 +463,22 @@
   @media (min-width: $tablet-desktop) {
     width: 324px;
   }
+
+  @media (min-width: $desktop) {
+    width: 384px;
+  }
 }
 
 .feedback__required-field {
   font-size: 12px;
   line-height: 21px;
-  margin: 0;
-  margin-left: auto;
+  margin: 3px 0 0 auto;
   text-transform: uppercase;
   color: rgba(#333333, 0.6);
+
+  @media (min-width: $tablet-desktop) {
+    font-size: 14px;
+    margin: 23px 0 0 auto;
+    color: $brown-dark;
+  }
 }

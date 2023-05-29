@@ -9,20 +9,32 @@
   padding: 90px 19px 79px;
   text-align: center;
 
-    &--container {
-      padding: 53px 48px 61px;
-    }
-
   @media (min-width: $tablet-desktop) {
     padding: 77px 0 86px;
   }
 
   @media (min-width: $desktop) {
     padding: 79px 0 84px;
+    background-position: top center;
   }
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/back-desktop@2x.jpg");
+  }
+
+  &--container {
+    padding: 53px 48px 61px;
+    background-position: center bottom;
+    background-size: 901px 389px;
+
+    @media (min-width: $tablet-desktop) {
+      padding: 95px 20px 111px;
+      background-size: auto;
+    }
+
+    @media (min-width: $desktop) {
+      padding-top: 106px;
+    }
   }
 
   &::after {

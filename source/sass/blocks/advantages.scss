@@ -7,7 +7,7 @@
   position: relative;
   padding: 34px 25px 36px;
 
-  @media (max-width: 765px) {
+  @media (max-width: 767px) {
     &::after {
       content: "";
       position: absolute;
@@ -27,7 +27,7 @@
   }
 
   @media (min-width: $desktop) {
-    padding: 32px 290px 16px;
+    padding: 60px 290px 44px;
   }
 }
 
@@ -89,33 +89,68 @@
     padding: 52px 32px 5px;
   }
 
+  @media (min-width: $desktop) {
+    padding: 52px 60px 5px;
+  }
+
   &--box {
-    background-color: #e7e5e5;
-    padding: 25px 35px;
+    position: relative;
+    background-color: #eeeeee;
+    padding: 25px 35px 8px;
+
+    @media (min-width: $tablet-desktop) {
+      padding: 41px 30px 19px;
+      width: calc(100% / 3);
+      box-sizing: border-box;
+    }
+
+    @media (min-width: $desktop) {
+      padding: 52px 36px 28px;
+    }
 
     .advantages__title {
       padding-bottom: 9px;
+
+      @media (min-width: $tablet-desktop) {
+        padding-bottom: 14px;
+        padding-right: 20px;
+        padding-left: 20px;
+      }
+
+      @media (min-width: $desktop) {
+        padding-right: 90px;
+        padding-left: 90px;
+      }
     }
 
     .advantages__description {
-      padding-bottom: 10px;
+      padding-bottom: 18px;
 
+      @media (min-width: $tablet-desktop) {
+        padding-bottom: 23px;
+
+        &--narrow {
+          margin: 0 10px;
+        }
+      }
     }
 
     &::after {
       content: "";
       position: absolute;
+      right: 20px;
+      left: 20px;
+      bottom: 1px;
       background-color: #dbdbdb;
-      width: calc(100% + 40px);
-      height: 2px;
-      bottom: 0;
-      left: 0;
+      height: 1px;
+
+      @media (min-width: $tablet-desktop) {
+        content: none;
+      }
     }
 
-    @media (min-width: $tablet-desktop) {
-      padding: 41px 33px 63px;
-      width: calc(100% / 3);
-      box-sizing: border-box;
+    &:last-child::after {
+      content: none;
     }
   }
 }
@@ -135,6 +170,10 @@
   .advantages__title {
     color: inherit;
     margin: 0 auto 12px;
+
+    @media (min-width: $desktop) {
+      margin: 0 35px 12px;
+    }
   }
 
   .advantages__description {
@@ -177,24 +216,39 @@
   padding: 32px 18px 1px 65px;
   text-align: left;
 
+  @media (min-width: $tablet-desktop) {
+    background-size: 75px 75px;
+    background-position: 50% 58px;
+    padding: 158px 33px 60px;
+    text-align: center;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 168px 33px 72px;
+    background-position: 50% 70px;
+  }
+
   &--house {
-    background-image: url("../img/index/icon-house.svg");
+    background-image: url("../img/sprite.svg#housing");
   }
 
   &--food {
-    background-image: url("../img/index/icon-burger.svg");
+    background-image: url("../img/sprite.svg#eat");
   }
 
   &--souvenirs {
-    background-image: url("../img/index/icon-gift.svg");
+    background-image: url("../img/sprite.svg#souvenirs");
     padding-bottom: 45px;
-  }
 
-  @media (min-width: $tablet-desktop) {
-    background-size: 75px 75px;
-    background-position: 50% 45px;
-    padding: 158px 33px 60px;
-    text-align: center;
+    @media (min-width: $tablet-desktop) {
+      padding-top: 153px;
+      background-position: 50% 63px;
+    }
+
+    @media (min-width: $desktop) {
+      padding-top: 170px;
+      background-position: 50% 69px;
+    }
   }
 }
 
@@ -203,10 +257,38 @@
   line-height: 26px;
   color: $black;
   margin: 0;
+
+  @media (min-width: $tablet-desktop) {
+    font-size: 21px;
+  }
 }
 
 .advantages__group-description {
   color: $brown-dark;
   margin: 0;
   padding-top: 16px;
+
+  @media (min-width: $tablet-desktop) {
+    padding-top: 23px;
+  }
+
+  @media (min-width: $desktop) {
+    margin: 0 25px;
+  }
+}
+
+.advantages__tablet-br {
+  display: none;
+
+  @media (min-width: $tablet-desktop) {
+    display: inline;
+  }
+}
+
+.advantages__desktop-br {
+  display: none;
+
+  @media (min-width: $desktop) {
+    display: inline;
+  }
 }

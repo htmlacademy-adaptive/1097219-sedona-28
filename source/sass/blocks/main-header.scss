@@ -11,6 +11,7 @@
   z-index: 1;
 
   @media (min-width: $tablet-desktop) {
+    top: 0;
     display: block;
   }
 
@@ -20,10 +21,6 @@
 
   &--nojs {
     top: 100%;
-  }
-
-  @media (min-width: $tablet-desktop) {
-    top: 0;
   }
 }
 
