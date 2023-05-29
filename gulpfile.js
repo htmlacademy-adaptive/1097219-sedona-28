@@ -24,8 +24,7 @@ const styles = () =>
     .pipe(sass().on('error', sass.logError))
     .pipe(postcss([autoprefixer()]))
     .pipe(dest('build/css', { sourcemaps: '.' }))
-    .pipe(rename('style.min.css'))
-    .pipe(browser.stream());
+    .pipe(rename('style.min.css'));
 
 const optimizeImages = () =>
   src('source/img/**/*.{jpg,png,svg}')
@@ -44,10 +43,13 @@ const optimizeImages = () =>
     )
     .pipe(dest('build/img'));
 
-const createWebp = () =>
-  src(['source/img/**/*.{jpg,png}', '!source/img/favicons/*'])
-    .pipe(webp({ quality: 75 }))
-    .pipe(dest('build/img'));
+const webpCreator = (source, destination) =>
+  function createWebp() {
+    return src(source)
+      .pipe(webp({ quality: 75 }))
+      .pipe(dest(destination));
+  };
+const createWebp = webpCreator(['source/img/**/*.{jpg,png}', '!source/img/favicons/*'], 'build/img');
 
 const createSprite = () =>
   src('source/sprite/**/*.svg')
@@ -81,8 +83,19 @@ const server = () => {
   });
 
   watch('source/*.html').on('change', browser.reload);
-  watch('source/sass/**/*.scss', styles);
-  watch(['source/img/**/*.{jpg,png}', '!source/img/favicons/*'], series(createWebp, reload));
+  watch('source/sass/**/*.scss', series(styles, reload));
+  watch(['source/img/**/*.{jpg,png}', '!source/img/favicons/*']).on('all', (event, path) => {
+    if (['add', 'change'].includes(event, path)) {
+      const img = path.replace(/\\/g, '/');
+      series(
+        webpCreator(
+          img,
+          img.replace(/^source\/(.*)\/.*/, 'build/$1')
+        ),
+        reload
+      )();
+    }
+  });
   watch('source/sprite/**/*.svg', series(createSprite, reload));
 };
 

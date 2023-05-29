@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="page" lang="ru">
+<html lang="ru">
 
 <head>
   <meta charset="UTF-8">
@@ -10,9 +10,11 @@
   <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicons/favicon-180.png"> <!-- 180×180 -->
   <link rel="manifest" href="manifest.webmanifest">
+  <link rel="preload" href="fonts/ptsans.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/ptsansbold.woff2" as="font" crossorigin="anonymous">
 </head>
 
-<body class="page-body">
+<body>
 
   <!-- шапка -->
 
@@ -80,7 +82,7 @@
             </p>
           </fieldset>
           <fieldset class="feedback__group feedback__group--contacts">
-            <legend class="feedback__title feedback__title--contacts">Контактная информация:</legend>
+            <legend class="feedback__title">Контактная информация:</legend>
             <p class="feedback__wrapper feedback__wrapper--phone">
               <label class="feedback__caption" for="contacts-phone">Контактный телефон*:</label>
               <input class="feedback__field feedback__field--phone" type="text" id="contacts-phone"
@@ -95,7 +97,7 @@
         </div>
         <div class="feedback__group-wrapper feedback__group-wrapper--inner">
           <fieldset class="feedback__group feedback__group--impressions">
-            <legend class="feedback__title">
+            <legend class="feedback__title feedback__title--bordered">
               <span class="feedback__title-inner">Ваше общее впечатление:</span>
             </legend>
             <ul class="feedback__list">
@@ -125,9 +127,8 @@
         </div>
         <div class="feedback__group-wrapper feedback__group-wrapper--inner">
           <fieldset class="feedback__group feedback__group--attractions">
-            <legend class="feedback__title">
-              <span class="feedback__title-inner">Посещенные достопримечательности:
-              </span>
+            <legend class="feedback__title feedback__title--bordered">
+              <span class="feedback__title-inner">Посещенные достопримечательности:</span>
             </legend>
             <ul class="feedback__list feedback__list--checkbox">
               <li class="feedback__item feedback__item--checkbox">
@@ -163,7 +164,7 @@
         </div>
         <div class="feedback__group-wrapper feedback__group-wrapper--emotions">
           <fieldset class="feedback__group feedback__group--emotions">
-            <label class="feedback__title feedback__title--emotions" for="emotions">
+            <label class="feedback__title feedback__title--bordered feedback__title--emotions" for="emotions">
               <span class="feedback__title-inner">Опишите свои эмоции:</span>
             </label>
             <textarea class="feedback__field feedback__field--area" id="emotions" name="emotions"
