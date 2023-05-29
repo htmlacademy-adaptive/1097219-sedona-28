@@ -4,7 +4,7 @@
 
 .gallery__list {
   margin: 0;
-  padding: 0 20px;
+  padding: 0;
   list-style-type: none;
 
   @media (min-width: $tablet-desktop) {
@@ -20,8 +20,8 @@
 }
 
 .gallery__item {
-  padding: 24px 0 25px;
-  border-bottom: solid 1px #e5e5e5;
+  padding: 24px 20px 26px;
+  border-top: solid 1px #e5e5e5;
 
   @media (min-width: $tablet-desktop) {
     display: grid;
@@ -34,6 +34,10 @@
       grid-column: 1 / -1;
     }
   }
+
+  @media (min-width: $desktop) {
+    border: none;
+  }
 }
 
 .gallery__picture {
@@ -41,7 +45,6 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  padding-bottom: 15px;
 }
 
 .gallery__info {
@@ -49,6 +52,10 @@
 
   @media (min-width: $tablet-desktop) {
     background-color: $white-smoke;
+
+    &--else {
+      background-color: #eaeaea;
+    }
   }
 
   @media (min-width: $desktop) {
@@ -62,11 +69,24 @@
 }
 
 .gallery__title {
-  margin: 0;
+  font-size: inherit;
+  line-height: 21px;
+  margin-top: 14px;
+  margin-bottom: 0;
   text-transform: uppercase;
 
   @media (min-width: $tablet-desktop) {
-    padding: 22px 10px 5px 20px;
+    margin-top: 0;
+    padding: 22px 10px 0 20px;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 22px 10px 0 20px;
+
+    &--inner {
+      margin-top: 5px;
+      padding: 13px 0 3px 25px;
+    }
   }
 }
 
@@ -82,6 +102,7 @@
 
   @media (min-width: $desktop) {
     color: inherit;
+    padding: 0 10px 17px 23px;
   }
 }
 
@@ -93,7 +114,7 @@
   @media (min-width: $tablet-desktop) {
     position: absolute;
     padding-right: 20px;
-    top: 22px;
+    top: 19px;
     right: 0;
   }
 }
@@ -102,13 +123,18 @@
   &::before {
     display: inline-block;
     content: "";
-    mask-image: url(../img/sprite.svg#like-icon);
+    mask-image: url("../img/sprite.svg#like-icon");
     background-color: $black;
     width: 23px;
     height: 21px;
     opacity: 0.3;
 
+    @media (min-width: $tablet-desktop) {
+      padding-right: 17px;
+    }
+
     @media (min-width: $desktop) {
+      margin-top: -4px;
       background-color: $white;
       opacity: 1;
     }
@@ -117,7 +143,10 @@
 
 .gallery__number {
   line-height: 21px;
-  font-weight:700;
-  margin: 0;
-  margin-left: 14px;
+  font-weight: 700;
+  margin: 6px 0 0 14px;
+
+  @media (min-width: $tablet-desktop) {
+    margin: 0;
+  }
 }

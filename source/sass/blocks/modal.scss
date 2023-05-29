@@ -15,42 +15,81 @@
 }
 
 .modal__content {
-  position: absolute;
-  left: 0;
-  top: 116px;
+  margin: auto;
   background-color: $white;
   text-align: center;
+  max-width: 320px;
+
+  &--failure {
+    display: none;
+
+    @media (min-width: $tablet-desktop) {
+      max-width: 400px;
+    }
+  }
 
   &--success {
-    display: none;
+    @media (min-width: $tablet-desktop) {
+      max-width: 640px;
+    }
   }
 }
 
 .modal__wrapper {
   padding: 45px;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-desktop) {
+    &--success {
+      padding: 45px 110px;
+    }
+  }
 }
 
 .modal__title {
-  font-size: 21px;
+  font-size: 18px;
   line-height: 26px;
   margin: 0;
+  margin-bottom: 30px;
+
+  @media (min-width: $tablet-desktop) {
+    font-size: 30px;
+  }
 }
 
 .modal__message {
-  font-size: 18px;
-  line-height: 26px;
+  line-height: 21px;
   color: $brown-dark;
   margin: 0;
+
+  &--failure {
+    margin-bottom: 28px;
+  }
+}
+
+.modal__button-wrapper {
+  background-color: $white-smoke;
+  padding: 20px;
+
+  @media (min-width: $tablet-desktop) {
+    padding: 44px 91px;
+  }
 }
 
 .modal__button {
-  display: inline-block;
   width: 180px;
-  margin: 28px auto 0 auto;
+  margin: auto 0;
   padding: 18px 14px;
 
   @media (min-width: $tablet-desktop) {
     width: 272px;
+  }
+
+  &--success {
+    width: 280px;
+
+    @media (min-width: $tablet-desktop) {
+      width: 458px;
+    }
   }
 }

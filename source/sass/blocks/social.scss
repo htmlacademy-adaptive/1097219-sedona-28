@@ -1,8 +1,9 @@
 .social__list {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   color: $black;
-  gap: 6px;
+  gap: 8px;
   margin: 0;
   padding: 0;
   margin-bottom: 30px;
@@ -18,7 +19,6 @@
   min-width: 48px;
   height: 48px;
   background-color: $blue;
-  margin-right: 8px;
   box-sizing: border-box;
 }
 

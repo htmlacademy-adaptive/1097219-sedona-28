@@ -60,13 +60,17 @@
   text-decoration: none;
   background-color: $blue;
 
-  @media (max-width: 765px) {
+  @media (max-width: 767px) {
+    padding-right: 60px;
+    padding-left: 60px;
+
     &:hover {
       background-color: #669ec0;
     }
 
     &:active {
-      background: #5496bd;
+      background-color: #5496bd;
+      color: #ffffff4d;
     }
   }
 
@@ -85,7 +89,7 @@
   width: 23px;
   height: 23px;
   top: 17px;
-  right: 17px;
+  right: 20px;
   cursor: pointer;
   background-color: transparent;
   border: none;
@@ -153,7 +157,9 @@
   }
 
   .main-nav__list {
-    display: none;
+    @media (max-width: ($tablet-desktop - 1px)) {
+      display: none;
+    }
   }
 }
 

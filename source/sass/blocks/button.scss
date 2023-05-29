@@ -1,8 +1,11 @@
 .button {
+  display: inline-block;
   color: $white;
   background-color: $blue;
   font-family: inherit;
   font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
   padding: 0;
   border: none;
   box-sizing: border-box;
@@ -10,4 +13,18 @@
   text-decoration: none;
   text-align: center;
   cursor: pointer;
+
+  &:hover {
+    background-color: #669ec0;
+  }
+
+  &:active {
+    background-color: #5496bd;
+    color: #ffffff4d;
+  }
+
+  &:disabled {
+    background-color: #e5e5e5;
+    cursor: not-allowed;
+  }
 }

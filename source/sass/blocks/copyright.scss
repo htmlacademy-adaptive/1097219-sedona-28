@@ -10,13 +10,14 @@
 .copyright__link {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
   color: $black;
   text-decoration: none;
   margin-left: auto;
+  gap: 12px;
 
   &:hover {
-    color: $blue
+    color: $blue;
   }
 
   &:active {

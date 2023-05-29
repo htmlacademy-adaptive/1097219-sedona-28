@@ -1,31 +1,60 @@
 .introduction {
   text-align: center;
   margin: 0;
-  padding: 37px 10px 10px;
-  border-bottom: solid 1px #e5e5e5;
+  padding: 39px 20px 22px;
+
+  &--form {
+    padding: 39px 20px 11px;
+  }
 
   @media (min-width: $tablet-desktop) {
-    border: none;
+    padding: 66px 165px;
+
+    &--form {
+      padding: 64px 165px 76px 165px;
+    }
+  }
+
+  @media (min-width: $desktop) {
+    padding: 98px 20px 89px;
+
+    &--form {
+      padding: 115px 20px 41px;
+    }
   }
 }
 
 .introduction__title {
-  font-size: 21px;
+  font-size: 18px;
   line-height: 26px;
-  margin: 0;
-  margin-bottom: 20px;
+  margin: 0 0 24px;
   text-transform: uppercase;
 
   @media (min-width: $tablet-desktop) {
+    margin-bottom: 33px;
     font-size: 30px;
+
+    &--form {
+      margin-bottom: 21px;
+    }
+  }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 32px;
   }
 }
 
 .introduction__description {
-  font-size: 18px;
-  line-height: 26px;
-  color: #333333;
-  margin: 0;
-  margin-bottom: 25px;
+  line-height: 21px;
+  color: $brown-dark;
+  margin: 0 0 14px;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-desktop) {
+    margin: 0 0 13px;
+  }
+
+  @media (min-width: $desktop) {
+    margin: 0 360px;
+  }
 }

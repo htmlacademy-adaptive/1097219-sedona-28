@@ -3,12 +3,13 @@ html {
 }
 
 body {
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
   line-height: 1.5;
   max-width: 1200px;
   margin: 0 auto;
   background-color: $white;
+  box-shadow: 0 5px 15px rgba(0, 1, 1, 0.2);
 }
 
 img {
