@@ -1,8 +1,11 @@
 .button {
+  display: inline-block;
   color: $white;
   background-color: $blue;
   font-family: inherit;
   font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
   padding: 0;
   border: none;
   box-sizing: border-box;
@@ -22,5 +25,6 @@
 
   &:disabled {
     background-color: #e5e5e5;
+    cursor: not-allowed;
   }
 }

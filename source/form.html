@@ -95,7 +95,9 @@
         </div>
         <div class="feedback__group-wrapper feedback__group-wrapper--inner">
           <fieldset class="feedback__group feedback__group--impressions">
-            <legend class="feedback__title">Ваше общее впечатление:</legend>
+            <legend class="feedback__title">
+              <span class="feedback__title-inner">Ваше общее впечатление:</span>
+            </legend>
             <ul class="feedback__list">
               <li class="feedback__item">
                 <label class="feedback__control feedback__control--radio">
@@ -123,7 +125,10 @@
         </div>
         <div class="feedback__group-wrapper feedback__group-wrapper--inner">
           <fieldset class="feedback__group feedback__group--attractions">
-            <legend class="feedback__title">Посещенные достопримечательности:</legend>
+            <legend class="feedback__title">
+              <span class="feedback__title-inner">Посещенные достопримечательности:
+              </span>
+            </legend>
             <ul class="feedback__list feedback__list--checkbox">
               <li class="feedback__item feedback__item--checkbox">
                 <label class="feedback__control feedback__control--checkbox">
@@ -158,7 +163,9 @@
         </div>
         <div class="feedback__group-wrapper feedback__group-wrapper--emotions">
           <fieldset class="feedback__group feedback__group--emotions">
-            <label class="feedback__title feedback__title--emotions" for="emotions">Опишите свои эмоции:</label>
+            <label class="feedback__title feedback__title--emotions" for="emotions">
+              <span class="feedback__title-inner">Опишите свои эмоции:</span>
+            </label>
             <textarea class="feedback__field feedback__field--area" id="emotions" name="emotions"
               placeholder="Опишите подробно все свои восторги" required></textarea>
           </fieldset>
@@ -210,19 +217,23 @@
   <div class="modal modal--close">
     <div class="modal__content modal__content--failure">
       <div class="modal__wrapper">
-        <h3 class="modal__title">Что-то пошло не так!</h3>
-        <p class="modal__message">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+        <h3 class="modal__title">Что-то пошло не&nbsp;так!</h3>
+        <p class="modal__message modal__message--failure">Проверьте поля, выделенные красным, скорее всего вы забыли их
+          заполнить</p>
         <button class="modal__button button" type="button">Ок</button>
       </div>
-      <div class="modal__content modal__content--success">
-        <div class="modal__wrapper">
-          <h3 class="modal__title">Ваш отзыв отправлен!</h3>
-          <p class="modal__message">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы
-            опубликуем его на сайте.</p>
-          <button class="modal__button button" type="button">Закрыть окно</button>
-        </div>
+    </div>
+    <div class="modal__content modal__content--success">
+      <div class="modal__wrapper modal__wrapper--success">
+        <h3 class="modal__title">Ваш отзыв отправлен!</h3>
+        <p class="modal__message">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В&nbsp;ближайшее время мы
+          опубликуем его на сайте.</p>
+      </div>
+      <div class="modal__button-wrapper">
+        <button class="modal__button modal__button--success button" type="button">Закрыть окно</button>
       </div>
     </div>
+  </div>
   </div>
 
   <script src="js/script.js"></script>
